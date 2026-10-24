@@ -545,5 +545,27 @@
       }
     }
   ],
-  "additional_html": "<div class=\"page-content\"><div class=\"row clearfix\"><div class=\"vc_row wpb_row vc_row-fluid\"><div class=\"wpb_column vc_column_container vc_col-sm-3\"><div class=\"vc_column-inner\"><div class=\"wpb_wrapper\"><div class=\"process_box vertical_process\"> <span style=\"color:#099aad\">4</span><h3>معجم مصطلحات علم الإبداع</h3><p>معجم مصطلحات علم الإبداع</p></div></div></div></div><div class=\"wpb_column vc_column_container vc_col-sm-3\"><div class=\"vc_column-inner\"><div class=\"wpb_wrapper\"><div class=\"process_box vertical_process\"> <span style=\"color:#099aad\">3</span><h3>قاعدة دراسات علم الإبداع</h3><p>قاعدة دراسات علم الإبداع</p></div></div></div></div><div class=\"wpb_column vc_column_container vc_col-sm-3\"><div class=\"vc_column-inner\"><div class=\"wpb_wrapper\"><div class=\"process_box vertical_process\"> <span style=\"color:#099aad\">2</span><h3>نموذج عامر السداسي لمجالات علم الإبداع</h3><p>نموذج عامر السداسي لمجالات علم الإبداع</p></div></div></div></div><div class=\"wpb_column vc_column_container vc_col-sm-3\"><div class=\"vc_column-inner\"><div class=\"wpb_wrapper\"><div class=\"process_box vertical_process\"> <span style=\"color:#099aad\">1</span><h3>عن علم الإبداع</h3><p>عن علم الإبداع</p></div></div></div></div></div></div> </div>"
+  "additional_html": "<div class=\"page-content\"><div class=\"row clearfix\"><div class=\"vc_row wpb_row vc_row-fluid\"><div class=\"wpb_column vc_column_container vc_col-sm-3\"><div class=\"vc_column-inner\"><div class=\"wpb_wrapper\"><div class=\"process_box vertical_process\"> <span style=\"color:#099aad\">4</span><h3>معجم مصطلحات علم الإبداع</h3><p>معجم مصطلحات علم الإبداع</p></div></div></div></div><div class=\"wpb_column vc_column_container vc_col-sm-3\"><div class=\"vc_column-inner\"><div class=\"wpb_wrapper\"><div class=\"process_box vertical_process\"> <span style=\"color:#099aad\">3</span><h3>قاعدة دراسات علم الإبداع</h3><p>قاعدة دراسات علم الإبداع</p></div></div></div></div><div class=\"wpb_column vc_column_container vc_col-sm-3\"><div class=\"vc_column-inner\"><div class=\"wpb_wrapper\"><div class=\"process_box vertical_process\"> <span style=\"color:#099aad\">2</span><h3>نموذج عامر السداسي لمجالات علم الإبداع</h3><p>نموذج عامر السداسي لمجالات علم الإبداع</p></div></div></div></div><div class=\"wpb_column vc_column_container vc_col-sm-3\"><div class=\"vc_column-inner\"><div class=\"wpb_wrapper\"><div class=\"process_box vertical_process\"> <span style=\"color:#099aad\">1</span><h3>عن علم الإبداع</h3><p>عن علم الإبداع</p></div></div></div></div></div></div> </div>",
+  "how_we_work": [
+    {
+      "number": "01",
+      "title": "عن علم الإبداع",
+      "text": "عن علم الإبداع"
+    },
+    {
+      "number": "02",
+      "title": "نموذج عامر السداسي لمجالات علم الإبداع",
+      "text": "نموذج عامر السداسي لمجالات علم الإبداع"
+    },
+    {
+      "number": "03",
+      "title": "قاعدة دراسات علم الإبداع",
+      "text": "قاعدة دراسات علم الإبداع"
+    },
+    {
+      "number": "04",
+      "title": "معجم مصطلحات علم الإبداع",
+      "text": "معجم مصطلحات علم الإبداع"
+    }
+  ]
 }

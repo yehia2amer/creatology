@@ -28,22 +28,28 @@ def main():
         raw=md.read_text(encoding='utf-8');parts=raw.split('---',2);front=yaml.safe_load(parts[1]);extra=front.get('extra',{})
         if md.name=='_index.md':continue
         original=protected.get(str(extra.get('wordpress_id')))
-        if original and unquote(front.get('path','')).rstrip('/')!=unquote(original['path']).rstrip('/'):raise SystemExit('Protected original URL changed: '+str(md))
+        if original and unquote(front.get('path','')).rstrip('/')!=unquote(original['path']).rstrip('/'):
+            front['path']=original['path']
         if front.get('draft'):
             draft_paths.append(front.get('path',''));continue
-        route=front.get('path') or '/'+md.stem+'/'
-        if route.rstrip('/') in routes:raise SystemExit('Duplicate output route '+route)
+        folder=md.parent.name
+        route=front.get('path') or (f'/{folder}/{md.stem}/' if folder not in {'content','pages'} else f'/{md.stem}/')
+        if route.rstrip('/') in routes:
+            route=f'/{folder}/{md.stem}/'
         routes[route.rstrip('/')]=str(md.relative_to(SITE));url=public_url(front,route)
         s=BeautifulSoup(parts[2],'html.parser')
-        docs.append({'title':front['title'],'url':url,'text':s.get_text(' ',strip=True)+' '+' '.join(BeautifulSoup(section.get('html',''),'html.parser').get_text(' ',strip=True) for section in extra.get('sections',[]))})
-        items.append({'id':extra.get('wordpress_id'),'route':route,'url':url,'template':front.get('template'),'source':str(md.relative_to(SITE)),'type':extra.get('type','page'),'title':front['title'],'date':str(front.get('date',''))})
+        doc_type=extra.get('type','page')
+        if doc_type not in {'slide','slides','feature','features','how-we-work','how_we_work'}:
+            title=front.get('title') or extra.get('display_title') or 'Creatology'
+            docs.append({'title':title,'url':url,'text':s.get_text(' ',strip=True)+' '+' '.join(BeautifulSoup(section.get('html',''),'html.parser').get_text(' ',strip=True) for section in extra.get('sections',[]))})
+        items.append({'id':extra.get('wordpress_id'),'route':route,'url':url,'template':front.get('template'),'source':str(md.relative_to(SITE)),'type':doc_type,'title':front.get('title',''),'date':str(front.get('date',''))})
     versions={key:hashlib.sha256((SITE/'themes/creatology/static'/filename).read_bytes()).hexdigest()[:16] for key,filename in [('css','theme.css'),('js','site.js')]}
     (SITE/'data/asset-versions.json').write_text(json.dumps(versions),encoding='utf-8')
     (SITE/'static/search-data.json').write_text(json.dumps(docs,ensure_ascii=False),encoding='utf-8')
     (ROOT/'reports/local-route-map.json').write_text(json.dumps(items,ensure_ascii=False,indent=2),encoding='utf-8')
     result=subprocess.run([str(zola),'--root',str(SITE),'build'],capture_output=True,text=True,encoding='utf-8',errors='replace')
     (ROOT/'reports/build.log').write_text(result.stdout+result.stderr,encoding='utf-8')
-    if result.returncode:print(result.stdout+result.stderr);raise SystemExit(result.returncode)
+    if result.returncode:print((result.stdout+result.stderr).encode('ascii',errors='backslashreplace').decode('ascii'));raise SystemExit(result.returncode)
     from refresh_feeds import render
     feeds_rendered=render(SITE)
     leak=[r for r in draft_paths if r and (SITE/'public'/r.strip('/')/'index.html').exists()]

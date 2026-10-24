@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: local/ayman-amer
+  repo: local/site
   branch: main
 locale: ar
 media_folder: static/wp-content/uploads/editor
@@ -1534,7 +1534,7 @@ collections:
   label: عناوين صفحات الأقسام
   files:
   - name: '170'
-    label: المدونة
+    label: علم الإبداع (نحو التأصيل)
     file: content/pages/170.md
     fields:
     - *id004
@@ -1558,7 +1558,7 @@ collections:
     - *id010
     - *id011
   - name: '181'
-    label: المدونة
+    label: الدورات المهنية
     file: content/pages/181.md
     fields:
     - *id004
@@ -1570,7 +1570,7 @@ collections:
     - *id010
     - *id011
   - name: '225'
-    label: المدونة
+    label: النماذج التنظيرية
     file: content/pages/225.md
     fields:
     - *id004
@@ -1606,7 +1606,7 @@ collections:
     - *id010
     - *id011
   - name: '695'
-    label: المدونة
+    label: الأنشطة (أرشيف)
     file: content/pages/695.md
     fields:
     - *id004
@@ -1618,7 +1618,7 @@ collections:
     - *id010
     - *id011
   - name: '696'
-    label: المدونة
+    label: الأعضاء (أرشيف)
     file: content/pages/696.md
     fields:
     - *id004
@@ -1630,7 +1630,7 @@ collections:
     - *id010
     - *id011
   - name: '713'
-    label: المدونة
+    label: المجموعات (أرشيف)
     file: content/pages/713.md
     fields:
     - *id004
@@ -1642,7 +1642,7 @@ collections:
     - *id010
     - *id011
   - name: '8'
-    label: المدونة
+    label: المدونة (المقالات)
     file: content/pages/8.md
     fields:
     - *id004

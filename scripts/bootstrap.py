@@ -17,5 +17,10 @@ def main():
         with tarfile.open(fileobj=io.BytesIO(blob),mode='r:gz') as archive:data=archive.extractfile(next(m for m in archive.getmembers() if Path(m.name).name=='zola')).read()
     binary=target/('zola.exe' if system=='Windows' else 'zola');binary.write_bytes(data)
     if system!='Windows':binary.chmod(0o755)
-    (target/'provenance.json').write_text(json.dumps({'version':'0.23.6','source':asset['browser_download_url'],'download_sha256':hash},indent=2),encoding='utf-8');print(str(binary))
+    (target/'provenance.json').write_text(json.dumps({'version':'0.23.6','source':asset['browser_download_url'],'download_sha256':hash},indent=2),encoding='utf-8')
+    if not (ROOT/'.git').exists():
+        import subprocess
+        subprocess.run(['git','init'],cwd=ROOT,check=False)
+        subprocess.run(['git','config','core.longpaths','true'],cwd=ROOT,check=False)
+    print(str(binary))
 if __name__=='__main__':main()
