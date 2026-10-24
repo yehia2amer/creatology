@@ -55,7 +55,7 @@ def refresh(site, feed, docs, deleted_routes=None):
     
     eligible = {}
     for route, doc in docs.items():
-        if route in deleted_routes:
+        if route in deleted_routes or doc['front'].get('draft'):
             continue
         front = doc['front']
         extra = front.get('extra', {})
@@ -64,6 +64,10 @@ def refresh(site, feed, docs, deleted_routes=None):
             fits = unquote(segments[1]) in get_taxonomies(front, extra).get(taxonomy, [])
         elif path == '/feed/':
             fits = extra.get('type') == 'post'
+        elif path in {'/books/feed/', '/lectures/feed/', '/training_courses/feed/'}:
+            feed_type = segments[0]
+            doc_type = extra.get('type') or doc.get('type')
+            fits = (doc_type == feed_type or (feed_type == 'training_courses' and doc_type in {'course', 'courses', 'training_courses'}) or (feed_type == 'books' and doc_type in {'book', 'books'}) or (feed_type == 'lectures' and doc_type in {'lecture', 'lectures'}))
         if fits:
             eligible[route] = doc
 

@@ -63,7 +63,9 @@ def update(site):
         h = hashlib.sha256(raw.encode()).hexdigest()
         body = parts[2].strip()
         body_h = hashlib.sha256(body.encode()).hexdigest()
-        route = route_key(front.get('path') or '/' + p.stem + '/')
+        folder = p.parent.name
+        fallback = f'/{folder}/{p.stem}/' if folder not in {'content', 'pages'} else f'/{p.stem}/'
+        route = route_key(front.get('path') or fallback)
         known_routes.add(route)
         if not version_path.exists():
             versions[key] = h
@@ -86,11 +88,6 @@ def update(site):
     deleted_routes = {r for r, k in route_map.items() if not (site / k).exists()}
     if deleted_routes:
         changed.extend(list(deleted_routes))
-        # Remove deleted routes from route_map so they don't dirty forever
-        for r in deleted_routes:
-            route_map.pop(r, None)
-    
-    route_map_path.write_text(json.dumps(route_map, ensure_ascii=False, indent=2), encoding='utf-8')
 
     if not version_path.exists():
         version_path.write_text(json.dumps(versions, ensure_ascii=False, indent=2), encoding='utf-8')
@@ -146,6 +143,12 @@ def update(site):
             # Never inject generic 'page' types into standard post/archive collections
             if taxonomy and len(segments) > 1:
                 fits = unquote(segments[1]) in doc_tax.get(taxonomy, [])
+            elif root == '/النماذج-التنظيرية/' and doc['type'] in {'models', 'model', 'post'}:
+                fits = True
+            elif root == '/نحو-التأصيل-لعلم-الإبداع/' and doc['type'] in {'science', 'post'}:
+                fits = True
+            elif root == '/دورات-مهنية/' and doc['type'] in {'training_courses', 'courses', 'course', 'post'}:
+                fits = True
             elif len(types) == 1 and doc['type'] in types and doc['type'] != 'page':
                 fits = True
             else:
@@ -153,7 +156,9 @@ def update(site):
             if fits and (taxonomy or doc['route'] not in original_keys):
                 additions.append(doc)
                 
-        if not additions and not deleted_routes and not any(docs.get(route_key(c['url']), {}).get('changed') for c in original_cards):
+        all_group_cards = [card for _, archive in pages for card in archive.get('cards', [])]
+        group_deleted = any(route_key(c['url']) in deleted_routes for c in all_group_cards)
+        if not additions and not group_deleted and not any(docs.get(route_key(c['url']), {}).get('changed') for c in original_cards):
             continue
             
         cards = []
@@ -187,15 +192,14 @@ def update(site):
             archive = copy.deepcopy(output.get(route, base))
             archive['cards'] = cards[(index - 1) * PAGE_SIZE:index * PAGE_SIZE]
             if count > 1:
-                # Correctly formatted HTML pagination without escaped backslashes
                 items_html = []
                 for n in range(1, count + 1):
                     pg_url = f"https://draymanamer.com{root if n == 1 else root + 'page/' + str(n) + '/'}"
                     if n == index:
-                        items_html.append(f'<li class="active"><a href="{pg_url}" aria-current="page">{n}</a></li>')
+                        items_html.append(f'<li class="active"><span class="page current" aria-current="page">{n}</span></li>')
                     else:
-                        items_html.append(f'<li><a href="{pg_url}">{n}</a></li>')
-                archive['pagination_html'] = '<ol>' + ''.join(items_html) + '</ol>'
+                        items_html.append(f'<li><a href="{pg_url}" class="page">{n}</a></li>')
+                archive['pagination_html'] = '<ol class="wp-paginate">' + ''.join(items_html) + '</ol>'
             else:
                 archive['pagination_html'] = ''
             output[route] = archive
@@ -226,6 +230,29 @@ def update(site):
                 
     for rail in home.get('rails', []):
         rail['cards'] = [new for card in rail['cards'] if (new := refresh(card)) is not None]
+
+    # Synchronize slide/feature/how-we-work edits into home
+    feat_map = {'87': 0, '86': 1, '84': 2, '85': 3}
+    hww_map = {'1': 0, '2': 1, '3': 2, '4': 3, '89': 0, '90': 1, '91': 2, '92': 3}
+    for doc in docs.values():
+        if not doc.get('changed'):
+            continue
+        wp_id = str(doc.get('extra', {}).get('wordpress_id', ''))
+        hww_id = str(doc.get('extra', {}).get('source_metadata', {}).get('how_we_work_id_number', ''))
+        doc_type = doc.get('type')
+        if doc_type in {'slide', 'slides', 'home_slider'}:
+            for s in home.get('slides', []):
+                if s.get('image') == doc.get('extra', {}).get('image') or not s.get('title'):
+                    s['title'] = doc['front']['title']
+                    s['alt'] = doc['front']['title']
+        elif doc_type in {'feature', 'features', 'home_features'} and wp_id in feat_map:
+            idx = feat_map[wp_id]
+            if idx < len(home.get('features', [])):
+                home['features'][idx]['title'] = doc['front']['title']
+        elif (doc_type in {'how_we_work', 'how-we-work'} or wp_id in hww_map) and (hww_id in hww_map or wp_id in hww_map):
+            idx = hww_map.get(hww_id, hww_map.get(wp_id))
+            if idx is not None and idx < len(home.get('how_we_work', [])):
+                home['how_we_work'][idx]['title'] = doc['front']['title']
         
     for p in runtime.glob('listing-*.md'):
         if p.name not in runtime_files:

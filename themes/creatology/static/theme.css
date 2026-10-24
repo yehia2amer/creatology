@@ -10,3 +10,5 @@
 
 /* Readable supplemental social labels; original tooltips and URLs remain intact. */
 .legacy-footer .social{flex-wrap:wrap}.legacy-footer .social a{width:auto;min-height:44px;padding:5px 10px;border-radius:3px}.legacy-footer .social a:before{content:attr(aria-label);font:11px Arial,sans-serif;overflow:visible}
+.book-layout{display:grid;grid-template-columns:300px minmax(0,1fr);column-gap:60px;padding-block:58px 90px;align-items:start}.book-layout .detail-media{max-width:300px;border-radius:4px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+.pagination .current,.pagination [aria-current="page"],.pagination li.active a,.pagination span.page.current{background:var(--teal)!important;color:white!important;border-color:var(--teal)!important}

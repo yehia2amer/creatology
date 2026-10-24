@@ -735,6 +735,7 @@ collections:
     name: path
     label: رابط الصفحة — لا تغير روابط المحتوى المستورد
     widget: string
+    required: false
     pattern:
     - ^/[^?#\\]*$
     - Use a site path such as /pages/new-page/. Existing imported paths are protected at build time.
@@ -1131,7 +1132,7 @@ collections:
       widget: string
       pattern:
       - ^/[^?#\\]*$
-      - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+      - Use a site path such as /about/ or /all_about_us/. Existing imported paths are protected at build time.
     - name: template
       widget: hidden
     - name: extra
@@ -1244,7 +1245,7 @@ collections:
       widget: string
       pattern:
       - ^/[^?#\\]*$
-      - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+      - Use a site path such as /about/ or /all_about_us/. Existing imported paths are protected at build time.
     - name: template
       widget: hidden
     - name: extra
@@ -1357,7 +1358,7 @@ collections:
       widget: string
       pattern:
       - ^/[^?#\\]*$
-      - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+      - Use a site path such as /about/ or /all_about_us/. Existing imported paths are protected at build time.
     - name: template
       widget: hidden
     - name: extra
@@ -1473,6 +1474,19 @@ collections:
     - name: additional_html
       widget: hidden
       required: false
+    - name: how_we_work
+      label: كيف نعمل
+      widget: list
+      fields:
+      - name: number
+        label: الرقم
+        widget: string
+      - name: title
+        label: العنوان
+        widget: string
+      - name: text
+        label: النص
+        widget: string
 - name: site-settings
   label: إعدادات الموقع والقوائم
   files:

@@ -1,4 +1,4 @@
-{% set site = load_data(path="data/site.json") %}{% set responsive_images=load_data(path="data/media.json") %}
+{% set site = load_data(path="data/site.json") %}{% set responsive_images=load_data(path="data/media.json", required=false) | default(value={}) %}
 <!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page and page.extra.seo_title and (not page.extra.initial_title or page.title == page.extra.initial_title) %}{{ page.extra.seo_title }}{% elif section and section.extra.seo_title %}{{ section.extra.seo_title }}{% else %}{% block title %}{{ site.title }}{% endblock %} - Creatology{% endif %}</title>
 <link rel="icon" href="{{ site.logo }}"><link rel="stylesheet" href="{{ get_url(path="theme.css", cachebust=true) | replace(from=config.base_url, to="") }}"><link rel="canonical" href="{% if page %}{{ page.extra.canonical_url or page.permalink }}{% elif section %}{{ section.permalink }}{% else %}{{ config.base_url }}/{% endif %}">

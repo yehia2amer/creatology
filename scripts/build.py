@@ -63,7 +63,12 @@ def main():
         url = public_url(front, route)
         s = BeautifulSoup(parts[2], 'html.parser')
         doc_type = extra.get('type', 'page')
-        if doc_type not in {'slide', 'slides', 'feature', 'features', 'how-we-work', 'how_we_work'}:
+        is_internal = doc_type in {
+            'slide', 'slides', 'feature', 'features', 'how-we-work', 'how_we_work',
+            'home_slider', 'home_features'
+        } or md.parent.name == 'generated' or '/page/' in route
+        is_blog_duplicate = front.get('title') == 'المدونة' and route != '/blog/'
+        if not is_internal and not is_blog_duplicate:
             title = front.get('title') or extra.get('display_title') or 'Creatology'
             docs.append({
                 'title': title,
