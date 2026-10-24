@@ -1,0 +1,13 @@
+public/
+.tools/
+.local/
+__pycache__/
+*.pyc
+.venv/
+data/build-home.json
+data/build-archives.json
+static/search-data.json
+data/media.json
+data/asset-versions.json
+static/processed_images/
+content/runtime/

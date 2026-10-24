@@ -1,0 +1,228 @@
+{
+  "title": "د. أيمن عامر",
+  "logo": "https://draymanamer.com/wp-content/uploads/2018/10/logo.png",
+  "contact_html": "<div class=\"info_bar\"> <i class=\"fa fa-phone\"></i> 01022744952 <i class=\"fa fa-envelope\"></i> <a href=\"mailto:ayamer.cu@gmail.com\"> ayamer.cu@gmail.com </a></div>",
+  "navigation": [
+    {
+      "id": 17,
+      "title": "الرئيسية",
+      "url": "https://draymanamer.com/",
+      "children": []
+    },
+    {
+      "id": 15,
+      "title": "د . أيمن عامر",
+      "url": "https://draymanamer.com/about/",
+      "children": [
+        {
+          "id": 61,
+          "title": "السيرة الذاتية التفصيلية",
+          "url": "https://draymanamer.com/all_about_us/",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "الدراسات",
+      "url": "https://draymanamer.com/blog/",
+      "children": [
+        {
+          "id": 52,
+          "title": "البحوث العلمية",
+          "url": "https://draymanamer.com/category/%d8%a7%d9%84%d8%a8%d8%ad%d9%88%d8%ab-%d8%a7%d9%84%d8%b9%d9%84%d9%85%d9%8a%d8%a9/",
+          "children": []
+        },
+        {
+          "id": 53,
+          "title": "المقالات الثقافية",
+          "url": "https://draymanamer.com/category/%d8%a7%d9%84%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa-%d8%a7%d9%84%d8%ab%d9%82%d8%a7%d9%81%d9%8a%d8%a9/",
+          "children": []
+        },
+        {
+          "id": 221,
+          "title": "رسائل اكاديمية (الاشراف)",
+          "url": "https://draymanamer.com/category/%d8%b1%d8%b3%d8%a7%d8%a6%d9%84-%d8%a7%d9%83%d8%a7%d8%af%d9%8a%d9%85%d9%8a%d8%a9-%d8%a7%d9%84%d8%a7%d8%b4%d8%b1%d8%a7%d9%81/",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 227,
+      "title": "النماذج  التنظيرية",
+      "url": "https://draymanamer.com/%d8%a7%d9%84%d9%86%d9%85%d8%a7%d8%b0%d8%ac-%d8%a7%d9%84%d8%aa%d9%86%d8%b8%d9%8a%d8%b1%d9%8a%d8%a9/",
+      "children": [
+        {
+          "id": 277,
+          "title": "النموذج السداسي لعلم الإبداع",
+          "url": "https://draymanamer.com/models_taxonomy/%d8%a7%d9%84%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d8%a7%d9%84%d8%b3%d8%af%d8%a7%d8%b3%d9%8a-%d9%84%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a5%d8%a8%d8%af%d8%a7%d8%b9/",
+          "children": []
+        },
+        {
+          "id": 278,
+          "title": "نموذج الوعي بالإبداع",
+          "url": "https://draymanamer.com/models_taxonomy/%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d8%a7%d9%84%d9%88%d8%b9%d9%8a-%d8%a8%d8%a7%d9%84%d8%a5%d8%a8%d8%af%d8%a7%d8%b9/",
+          "children": []
+        },
+        {
+          "id": 279,
+          "title": "نموذج مستويات التعاطي والادمان",
+          "url": "https://draymanamer.com/models_taxonomy/%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d9%85%d8%b3%d8%aa%d9%88%d9%8a%d8%a7%d8%aa-%d8%a7%d9%84%d8%aa%d8%b9%d8%a7%d8%b7%d9%8a-%d9%88%d8%a7%d9%84%d8%a7%d8%af%d9%85%d8%a7%d9%86/",
+          "children": []
+        },
+        {
+          "id": 280,
+          "title": "نموذج نعاطي الفنان",
+          "url": "https://draymanamer.com/models_taxonomy/%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d9%86%d8%b9%d8%a7%d8%b7%d9%8a-%d8%a7%d9%84%d9%81%d9%86%d8%a7%d9%86/",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "الكتب",
+      "url": "https://draymanamer.com/books/",
+      "children": [
+        {
+          "id": 54,
+          "title": "كتب علمية",
+          "url": "https://draymanamer.com/books_taxonomy/%d9%83%d8%aa%d8%a8-%d8%b9%d9%84%d9%85%d9%8a%d8%a9/",
+          "children": []
+        },
+        {
+          "id": 239,
+          "title": "كتب ثقافيه",
+          "url": "https://draymanamer.com/books_taxonomy/%d9%83%d8%aa%d8%a8-%d8%ab%d9%82%d8%a7%d9%81%d9%8a%d9%87/",
+          "children": []
+        },
+        {
+          "id": 55,
+          "title": "كتب مترجمة",
+          "url": "https://draymanamer.com/books_taxonomy/%d9%83%d8%aa%d8%a8-%d9%85%d8%aa%d8%b1%d8%ac%d9%85%d8%a9/",
+          "children": []
+        },
+        {
+          "id": 224,
+          "title": "اشعار دواوين",
+          "url": "https://draymanamer.com/books_taxonomy/%d8%a7%d8%b4%d8%b9%d8%a7%d8%b1-%d8%af%d9%88%d8%a7%d9%88%d9%8a%d9%86/",
+          "children": []
+        },
+        {
+          "id": 237,
+          "title": "معاجم",
+          "url": "https://draymanamer.com/books_taxonomy/%d9%85%d8%b9%d8%a7%d8%ac%d9%85/",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "title": "المحاضرات واللقاءات",
+      "url": "https://draymanamer.com/lectures/",
+      "children": [
+        {
+          "id": 56,
+          "title": "محاضرات اكاديمية",
+          "url": "https://draymanamer.com/lectures_taxonomy/%d9%85%d8%ad%d8%a7%d8%b6%d8%b1%d8%a7%d8%aa-%d8%a7%d9%83%d8%a7%d8%af%d9%8a%d9%85%d9%8a%d8%a9/",
+          "children": []
+        },
+        {
+          "id": 57,
+          "title": "محاضرات في الثقافة العلمية",
+          "url": "https://draymanamer.com/lectures_taxonomy/%d9%85%d8%ad%d8%a7%d8%b6%d8%b1%d8%a7%d8%aa-%d9%81%d9%8a-%d8%a7%d9%84%d8%ab%d9%82%d8%a7%d9%81%d8%a9-%d8%a7%d9%84%d8%b9%d9%84%d9%85%d9%8a%d8%a9/",
+          "children": []
+        },
+        {
+          "id": 241,
+          "title": "لقاءات إعلامية",
+          "url": "https://draymanamer.com/lectures_taxonomy/%d9%84%d9%82%d8%a7%d8%a1%d8%a7%d8%aa-%d8%a5%d8%b9%d9%84%d8%a7%d9%85%d9%8a%d8%a9/",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "title": "مؤتمرات ودورات",
+      "url": "https://draymanamer.com/training_courses/",
+      "children": [
+        {
+          "id": 58,
+          "title": "دورات مسجلة",
+          "url": "https://draymanamer.com/training_courses_taxonomy/%d8%af%d9%88%d8%b1%d8%a7%d8%aa-%d9%85%d8%b3%d8%ac%d9%84%d8%a9/",
+          "children": []
+        },
+        {
+          "id": 247,
+          "title": "دورات مهنيه",
+          "url": "https://draymanamer.com/training_courses_taxonomy/%d8%af%d9%88%d8%b1%d8%a7%d8%aa-%d9%85%d9%87%d9%86%d9%8a%d9%87/",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 172,
+      "title": "علم الإبداع",
+      "url": "https://draymanamer.com/%d9%86%d8%ad%d9%88-%d8%a7%d9%84%d8%aa%d8%a3%d8%b5%d9%8a%d9%84-%d9%84%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a5%d8%a8%d8%af%d8%a7%d8%b9/",
+      "children": [
+        {
+          "id": 268,
+          "title": "عن علم الابداع",
+          "url": "https://draymanamer.com/science_taxonomy/%d8%b9%d9%86-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a7%d8%a8%d8%af%d8%a7%d8%b9/",
+          "children": []
+        },
+        {
+          "id": 266,
+          "title": "نموذج تصنيف دراسات علم الابداع",
+          "url": "https://draymanamer.com/science_taxonomy/%d8%af%d8%b1%d8%a7%d8%b3%d8%a7%d8%aa-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a7%d8%a8%d8%af%d8%a7%d8%b9/",
+          "children": []
+        },
+        {
+          "id": 265,
+          "title": "معجم مفاهيم ونظريات علم الإبداع",
+          "url": "https://draymanamer.com/science_taxonomy/%d9%85%d9%81%d8%a7%d9%87%d9%8a%d9%85-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a7%d8%a8%d8%af%d8%a7%d8%b9/",
+          "children": []
+        },
+        {
+          "id": 263,
+          "title": "قاعدة دراسات علم الإبداع",
+          "url": "https://draymanamer.com/science_taxonomy/%d9%82%d8%a7%d8%b9%d8%af%d8%a9-%d8%af%d8%b1%d8%a7%d8%b3%d8%a7%d8%aa-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a5%d8%a8%d8%af%d8%a7%d8%b9/",
+          "children": []
+        },
+        {
+          "id": 262,
+          "title": "دبلوم علم الإبداع وتطبيقاته",
+          "url": "https://draymanamer.com/science_taxonomy/%d8%af%d8%a8%d9%84%d9%88%d9%85-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a5%d8%a8%d8%af%d8%a7%d8%b9/",
+          "children": []
+        },
+        {
+          "id": 264,
+          "title": "مؤسسة علم الإبداع",
+          "url": "https://draymanamer.com/science_taxonomy/%d9%85%d8%a4%d8%b3%d8%b3%d8%a9-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a5%d8%a8%d8%af%d8%a7%d8%b9/",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "footer_html": "<footer><div class=\"footer_widgets row clearfix\"><div class=\"widget footer_widget widget_text grid_4\" id=\"text-2\"><div class=\"textwidget\"> <img alt=\"Creatology\" decoding=\"async\" height=\"135\" loading=\"lazy\" src=\"https://draymanamer.com/wp-content/uploads/2018/10/logo.png\" width=\"160\"/> موقع للاستشارات الحديثه<div class=\"social social_widget w_radius w_border mbf clearfix\"> <a aria-label=\"Twitter\" class=\"fab ico-twitter fa-twitter\" href=\"http://twitter.com\" original-title=\"Twitter\" rel=\"noopener\" target=\"_blank\" title=\"Twitter\"> </a> <a aria-label=\"Facebook\" class=\"fab ico-facebook fa-facebook-f\" href=\"https://www.facebook.com/ayman.amer.77377692\" original-title=\"Facebook\" rel=\"noopener\" target=\"_blank\" title=\"Facebook\"> </a> <a aria-label=\"YouTube\" class=\"fab fa-google-plus-g ico-google-plus\" href=\"https://www.youtube.com/channel/UCdmWDd1ulhfdLGkb2uuMtQw\" original-title=\"Flickr\" rel=\"noopener\" target=\"_blank\" title=\"Flickr\"></a> <a aria-label=\"LinkedIn\" class=\"fab fa-linkedin-in ico-linkedin\" href=\"https://www.linkedin.com/in/ayamer/\" original-title=\"RSS\" rel=\"noopener\" target=\"_blank\" title=\"RSS\"></a></div></div></div><div class=\"widget footer_widget widget_bizpro_portfolio grid_4\" id=\"bizpro_portfolio-2\"> </div><div class=\"widget grid_4\" id=\"bizpro_contact-2\"><h4>اتصل بنا</h4><div class=\"address\"><p> القاهرة - المقطم</p><div><i class=\"fa fa-phone\"></i>01022744952</div><div> <a href=\"mailto:ayamer.cu@gmail.com\" rel=\"noopener\" target=\"_blank\"> <i class=\"far fa-envelope\"></i> ayamer.cu@gmail.com </a></div></div></div></div> <div class=\"sub_footer\"><div class=\"row clearfix both-center\"><div class=\"menu-footer-menu-container\"><ul class=\"foot-menu\" id=\"menu-footer-menu\"><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-26\" id=\"menu-item-26\"><a aria-current=\"page\" href=\"https://draymanamer.com/\">الرئيسية</a></li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-29\" id=\"menu-item-29\"><a href=\"https://draymanamer.com/about/\">د . أيمن عامر</a></li><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-28\" id=\"menu-item-28\"><a href=\"https://draymanamer.com/contact/\">اتصل بنا</a></li></ul></div> <span class=\"copyright\">حقوق النشر © 2018 Creatology. تم التطوير بواسطة<a href=\"http://atlantech-it.com/\" rel=\"noopener\" target=\"_blank\">ATLANTECH-II</a>.</span></div> </div> </footer>",
+  "social": [
+    {
+      "label": "Twitter",
+      "url": "http://twitter.com"
+    },
+    {
+      "label": "Facebook",
+      "url": "https://www.facebook.com/ayman.amer.77377692"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/channel/UCdmWDd1ulhfdLGkb2uuMtQw",
+      "source_label": "Flickr"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/ayamer/",
+      "source_label": "RSS"
+    }
+  ],
+  "logo_link": "https://draymanamer.com"
+}

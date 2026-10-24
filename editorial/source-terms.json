@@ -1,0 +1,296 @@
+[
+  {
+    "kind": "category",
+    "fields": {
+      "term_id": "6",
+      "category_nicename": "%d8%a7%d9%84%d8%a8%d8%ad%d9%88%d8%ab-%d8%a7%d9%84%d8%b9%d9%84%d9%85%d9%8a%d8%a9",
+      "category_parent": "",
+      "cat_name": "البحوث العلمية"
+    }
+  },
+  {
+    "kind": "category",
+    "fields": {
+      "term_id": "7",
+      "category_nicename": "%d8%a7%d9%84%d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa-%d8%a7%d9%84%d8%ab%d9%82%d8%a7%d9%81%d9%8a%d8%a9",
+      "category_parent": "",
+      "cat_name": "المقالات الثقافية"
+    }
+  },
+  {
+    "kind": "category",
+    "fields": {
+      "term_id": "12",
+      "category_nicename": "%d8%b1%d8%b3%d8%a7%d8%a6%d9%84-%d8%a7%d9%83%d8%a7%d8%af%d9%8a%d9%85%d9%8a%d8%a9-%d8%a7%d9%84%d8%a7%d8%b4%d8%b1%d8%a7%d9%81",
+      "category_parent": "",
+      "cat_name": "رسائل اكاديمية (الاشراف)"
+    }
+  },
+  {
+    "kind": "category",
+    "fields": {
+      "term_id": "1",
+      "category_nicename": "%d8%ba%d9%8a%d8%b1-%d9%85%d8%b5%d9%86%d9%81",
+      "category_parent": "",
+      "cat_name": "غير مصنف"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "13",
+      "term_taxonomy": "books_taxonomy",
+      "term_slug": "%d8%a7%d8%b4%d8%b9%d8%a7%d8%b1-%d8%af%d9%88%d8%a7%d9%88%d9%8a%d9%86",
+      "term_parent": "",
+      "term_name": "اشعار دواوين"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "24",
+      "term_taxonomy": "models_taxonomy",
+      "term_slug": "%d8%a7%d9%84%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d8%a7%d9%84%d8%b3%d8%af%d8%a7%d8%b3%d9%8a-%d9%84%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a5%d8%a8%d8%af%d8%a7%d8%b9",
+      "term_parent": "",
+      "term_name": "النموذج السداسي لعلم الإبداع"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "22",
+      "term_taxonomy": "science_taxonomy",
+      "term_slug": "%d8%af%d8%a8%d9%84%d9%88%d9%85-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a5%d8%a8%d8%af%d8%a7%d8%b9",
+      "term_parent": "",
+      "term_name": "دبلوم علم الإبداع وتطبيقاته"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "10",
+      "term_taxonomy": "training_courses_taxonomy",
+      "term_slug": "%d8%af%d9%88%d8%b1%d8%a7%d8%aa-%d9%85%d8%b3%d8%ac%d9%84%d8%a9",
+      "term_parent": "",
+      "term_name": "دورات مسجلة"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "17",
+      "term_taxonomy": "training_courses_taxonomy",
+      "term_slug": "%d8%af%d9%88%d8%b1%d8%a7%d8%aa-%d9%85%d9%87%d9%86%d9%8a%d9%87",
+      "term_parent": "",
+      "term_name": "دورات مهنيه"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "18",
+      "term_taxonomy": "science_taxonomy",
+      "term_slug": "%d8%b9%d9%86-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a7%d8%a8%d8%af%d8%a7%d8%b9",
+      "term_parent": "",
+      "term_name": "عن علم الابداع"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "47",
+      "term_taxonomy": "lectures_taxonomy",
+      "term_slug": "%d9%81%d8%b9%d8%a7%d9%84%d9%8a%d8%a7%d8%aa-%d8%ab%d9%82%d8%a7%d9%81%d9%8a%d8%a9",
+      "term_parent": "",
+      "term_name": "فعاليات ثقافية"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "20",
+      "term_taxonomy": "science_taxonomy",
+      "term_slug": "%d9%82%d8%a7%d8%b9%d8%af%d8%a9-%d8%af%d8%b1%d8%a7%d8%b3%d8%a7%d8%aa-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a5%d8%a8%d8%af%d8%a7%d8%b9",
+      "term_parent": "",
+      "term_name": "قاعدة دراسات علم الإبداع"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "11",
+      "term_taxonomy": "books_taxonomy",
+      "term_slug": "%d9%83%d8%aa%d8%a8-%d8%ab%d9%82%d8%a7%d9%81%d9%8a%d9%87",
+      "term_parent": "",
+      "term_name": "كتب ثقافيه"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "4",
+      "term_taxonomy": "books_taxonomy",
+      "term_slug": "%d9%83%d8%aa%d8%a8-%d8%b9%d9%84%d9%85%d9%8a%d8%a9",
+      "term_parent": "",
+      "term_name": "كتب علمية"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "5",
+      "term_taxonomy": "books_taxonomy",
+      "term_slug": "%d9%83%d8%aa%d8%a8-%d9%85%d8%aa%d8%b1%d8%ac%d9%85%d8%a9",
+      "term_parent": "",
+      "term_name": "كتب مترجمة"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "16",
+      "term_taxonomy": "lectures_taxonomy",
+      "term_slug": "%d9%84%d9%82%d8%a7%d8%a1%d8%a7%d8%aa-%d8%a5%d8%b9%d9%84%d8%a7%d9%85%d9%8a%d8%a9",
+      "term_parent": "",
+      "term_name": "لقاءات إعلامية"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "29",
+      "term_taxonomy": "lectures_taxonomy",
+      "term_slug": "%d9%85%d8%a4%d8%aa%d9%85%d8%b1%d8%a7%d8%aa",
+      "term_parent": "",
+      "term_name": "مؤتمرات"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "45",
+      "term_taxonomy": "training_courses_taxonomy",
+      "term_slug": "%d9%85%d8%a4%d8%aa%d9%85%d8%b1%d8%a7%d8%aa",
+      "term_parent": "",
+      "term_name": "مؤتمرات"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "23",
+      "term_taxonomy": "science_taxonomy",
+      "term_slug": "%d9%85%d8%a4%d8%b3%d8%b3%d8%a9-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a5%d8%a8%d8%af%d8%a7%d8%b9",
+      "term_parent": "",
+      "term_name": "مؤسسة علم الإبداع"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "8",
+      "term_taxonomy": "lectures_taxonomy",
+      "term_slug": "%d9%85%d8%ad%d8%a7%d8%b6%d8%b1%d8%a7%d8%aa-%d8%a7%d9%83%d8%a7%d8%af%d9%8a%d9%85%d9%8a%d8%a9",
+      "term_parent": "",
+      "term_name": "محاضرات اكاديمية"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "9",
+      "term_taxonomy": "lectures_taxonomy",
+      "term_slug": "%d9%85%d8%ad%d8%a7%d8%b6%d8%b1%d8%a7%d8%aa-%d9%81%d9%8a-%d8%a7%d9%84%d8%ab%d9%82%d8%a7%d9%81%d8%a9-%d8%a7%d9%84%d8%b9%d9%84%d9%85%d9%8a%d8%a9",
+      "term_parent": "",
+      "term_name": "محاضرات في الثقافة العلمية"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "15",
+      "term_taxonomy": "books_taxonomy",
+      "term_slug": "%d9%85%d8%b9%d8%a7%d8%ac%d9%85",
+      "term_parent": "",
+      "term_name": "معاجم"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "21",
+      "term_taxonomy": "science_taxonomy",
+      "term_slug": "%d9%85%d9%81%d8%a7%d9%87%d9%8a%d9%85-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a7%d8%a8%d8%af%d8%a7%d8%b9",
+      "term_parent": "",
+      "term_name": "معجم مفاهيم ونظريات علم الإبداع"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "25",
+      "term_taxonomy": "models_taxonomy",
+      "term_slug": "%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d8%a7%d9%84%d9%88%d8%b9%d9%8a-%d8%a8%d8%a7%d9%84%d8%a5%d8%a8%d8%af%d8%a7%d8%b9",
+      "term_parent": "",
+      "term_name": "نموذج الوعي بالإبداع"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "46",
+      "term_taxonomy": "models_taxonomy",
+      "term_slug": "%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d8%aa%d8%b5%d9%86%d9%8a%d9%81-%d8%a3%d8%b3%d8%a7%d9%84%d9%8a%d8%a8-%d8%aa%d9%86%d9%85%d9%8a%d8%a9-%d8%a7%d9%84%d8%a7%d8%a8%d8%af%d8%a7%d8%b9",
+      "term_parent": "",
+      "term_name": "نموذج تصنيف أساليب تنمية الابداع"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "19",
+      "term_taxonomy": "science_taxonomy",
+      "term_slug": "%d8%af%d8%b1%d8%a7%d8%b3%d8%a7%d8%aa-%d8%b9%d9%84%d9%85-%d8%a7%d9%84%d8%a7%d8%a8%d8%af%d8%a7%d8%b9",
+      "term_parent": "",
+      "term_name": "نموذج تصنيف دراسات علم الابداع"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "27",
+      "term_taxonomy": "models_taxonomy",
+      "term_slug": "%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d9%85%d8%b3%d8%aa%d9%88%d9%8a%d8%a7%d8%aa-%d8%a7%d9%84%d8%aa%d8%b9%d8%a7%d8%b7%d9%8a-%d9%88%d8%a7%d9%84%d8%a7%d8%af%d9%85%d8%a7%d9%86",
+      "term_parent": "",
+      "term_name": "نموذج مستويات التعاطي والادمان"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "26",
+      "term_taxonomy": "models_taxonomy",
+      "term_slug": "%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d9%86%d8%b9%d8%a7%d8%b7%d9%8a-%d8%a7%d9%84%d9%81%d9%86%d8%a7%d9%86",
+      "term_parent": "",
+      "term_name": "نموذج نعاطي الفنان"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "3",
+      "term_taxonomy": "nav_menu",
+      "term_slug": "footer-menu",
+      "term_name": "footer-menu"
+    }
+  },
+  {
+    "kind": "term",
+    "fields": {
+      "term_id": "2",
+      "term_taxonomy": "nav_menu",
+      "term_slug": "header-menu",
+      "term_name": "header-menu"
+    }
+  }
+]

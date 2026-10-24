@@ -1,0 +1,1718 @@
+[
+  {
+    "id": 15,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "post_type"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "0"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "10"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "page"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "post_type"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "0"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "8"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "page"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "post_type"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "0"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "6"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "page"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "post_type"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "0"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "18"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "page"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "post_type"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "0"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "6"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "page"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "footer-menu",
+        "name": "footer-menu"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "post_type"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "0"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "12"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "page"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "footer-menu",
+        "name": "footer-menu"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "post_type"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "0"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "10"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "page"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "footer-menu",
+        "name": "footer-menu"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "type": "wpcf7_contact_form",
+    "status": "publish",
+    "title": "Contact form 1",
+    "body": "<label> Your Name (required)\n    [text* your-name] </label>\n\n<label> Your Email (required)\n    [email* your-email] </label>\n\n<label> Subject\n    [text your-subject] </label>\n\n<label> Your Message\n    [textarea your-message] </label>\n\n[submit \"Send\"]\nCreatology \"[your-subject]\"\n[your-name] <wordpress@ranmm6.sg-host.com>\nFrom: [your-name] <[your-email]>\nSubject: [your-subject]\n\nMessage Body:\n[your-message]\n\n-- \nThis e-mail was sent from a contact form on Creatology (https://draymanamer.com)\nsayed.aboelela96@gmail.com\nReply-To: [your-email]\n\n0\n0\n\nCreatology \"[your-subject]\"\nCreatology <wordpress@ranmm6.sg-host.com>\nMessage Body:\n[your-message]\n\n-- \nThis e-mail was sent from a contact form on Creatology (https://draymanamer.com)\n[your-email]\nReply-To: sayed.aboelela96@gmail.com\n\n0\n0\nThank you for your message. It has been sent.\nThere was an error trying to send your message. Please try again later.\nOne or more fields have an error. Please check and try again.\nThere was an error trying to send your message. Please try again later.\nYou must accept the terms and conditions before sending your message.\nThe field is required.\nThe field is too long.\nThe field is too short.",
+    "metadata": [
+      {
+        "key": "_form",
+        "value": "<label> Your Name (required)\n    [text* your-name] </label>\n\n<label> Your Email (required)\n    [email* your-email] </label>\n\n<label> Subject\n    [text your-subject] </label>\n\n<label> Your Message\n    [textarea your-message] </label>\n\n[submit \"Send\"]"
+      },
+      {
+        "key": "_messages",
+        "value": "a:8:{s:12:\"mail_sent_ok\";s:45:\"Thank you for your message. It has been sent.\";s:12:\"mail_sent_ng\";s:71:\"There was an error trying to send your message. Please try again later.\";s:16:\"validation_error\";s:61:\"One or more fields have an error. Please check and try again.\";s:4:\"spam\";s:71:\"There was an error trying to send your message. Please try again later.\";s:12:\"accept_terms\";s:69:\"You must accept the terms and conditions before sending your message.\";s:16:\"invalid_required\";s:22:\"The field is required.\";s:16:\"invalid_too_long\";s:22:\"The field is too long.\";s:17:\"invalid_too_short\";s:23:\"The field is too short.\";}"
+      },
+      {
+        "key": "_locale",
+        "value": "ar"
+      }
+    ],
+    "terms": []
+  },
+  {
+    "id": 50,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "post_type"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "0"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "39"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "page"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "المحاضرات واللقاءات",
+    "body": "",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "post_type"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "0"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "37"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "page"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "16"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "6"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "category"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "16"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "7"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "category"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "20"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "4"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "books_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "20"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "5"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "books_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "51"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "8"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "lectures_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "51"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "9"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "lectures_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "50"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "10"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "training_courses_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "post_type"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "page"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "59"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "15"
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "post_type"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "0"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "170"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "page"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 221,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "16"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "12"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "category"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 224,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_object_id",
+        "value": "13"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "20"
+      },
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "books_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 227,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "post_type"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "0"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "225"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "page"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 237,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "books_taxonomy"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "15"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "20"
+      },
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 239,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "books_taxonomy"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "11"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "20"
+      },
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 241,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "lectures_taxonomy"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "16"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "51"
+      },
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 247,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "50"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "17"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "training_courses_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 262,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "172"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "22"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "science_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 263,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "172"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "20"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "science_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 264,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "science_taxonomy"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "23"
+      },
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "172"
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 265,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "172"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "21"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "science_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 266,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "172"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "19"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "science_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 268,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "172"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "18"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "science_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 277,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "227"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "24"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "models_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 278,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "227"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "25"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "models_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 279,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "227"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "27"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "models_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 280,
+    "type": "nav_menu_item",
+    "status": "publish",
+    "title": "",
+    "body": " ",
+    "metadata": [
+      {
+        "key": "_menu_item_type",
+        "value": "taxonomy"
+      },
+      {
+        "key": "_menu_item_menu_item_parent",
+        "value": "227"
+      },
+      {
+        "key": "_menu_item_object_id",
+        "value": "26"
+      },
+      {
+        "key": "_menu_item_object",
+        "value": "models_taxonomy"
+      },
+      {
+        "key": "_menu_item_target",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_classes",
+        "value": "a:1:{i:0;s:0:\"\";}"
+      },
+      {
+        "key": "_menu_item_xfn",
+        "value": ""
+      },
+      {
+        "key": "_menu_item_url",
+        "value": ""
+      }
+    ],
+    "terms": [
+      {
+        "taxonomy": "nav_menu",
+        "slug": "header-menu",
+        "name": "header-menu"
+      }
+    ]
+  },
+  {
+    "id": 732,
+    "type": "awf_font_control",
+    "status": "publish",
+    "title": "القائمة الرئيسية",
+    "body": "",
+    "metadata": [
+      {
+        "key": "_awf_css_selectors",
+        "value": ".menu-item , .menu-item-type-post , .type menu-item-object-page , .menu-item-has-children , .menu-item , .menu-item-type-taxonomy , .menu-item-object-category"
+      }
+    ],
+    "terms": []
+  }
+]

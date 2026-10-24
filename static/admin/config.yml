@@ -1,0 +1,1655 @@
+backend:
+  name: github
+  repo: local/ayman-amer
+  branch: main
+locale: ar
+media_folder: static/wp-content/uploads/editor
+public_folder: /wp-content/uploads/editor
+site_url: https://draymanamer.com
+display_url: http://localhost:1111
+collections:
+- name: articles
+  label: الدراسات
+  folder: content/articles
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{slug}}'
+  identifier_field: title
+  filter:
+    field: template
+    pattern: article.html
+  fields:
+  - name: title
+    label: العنوان
+    widget: string
+  - name: date
+    label: التاريخ
+    widget: datetime
+  - name: draft
+    label: مسودة
+    widget: boolean
+    default: true
+  - name: path
+    label: رابط الصفحة — لا تغير روابط المحتوى المستورد
+    widget: string
+    pattern:
+    - ^/[^?#\\]*$
+    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+  - name: template
+    widget: hidden
+    default: article.html
+  - name: extra
+    label: بيانات الصفحة
+    widget: object
+    fields:
+    - name: wordpress_id
+      widget: hidden
+      required: false
+    - name: type
+      widget: hidden
+      default: post
+    - name: original_url
+      widget: hidden
+      required: false
+    - name: display_title
+      widget: hidden
+      required: false
+    - name: image
+      label: الصورة
+      widget: image
+      required: false
+    - name: image_link
+      widget: hidden
+      required: false
+    - name: source_metadata
+      widget: hidden
+      required: false
+    - name: terms
+      widget: hidden
+      required: false
+    - name: archive_source_path
+      widget: hidden
+      required: false
+    - name: seo_title
+      widget: hidden
+      required: false
+    - name: seo_meta
+      widget: hidden
+      required: false
+    - name: canonical_url
+      widget: hidden
+      required: false
+    - name: wordpress_title
+      widget: hidden
+      required: false
+    - name: initial_title
+      widget: hidden
+      required: false
+    - name: wordpress_local_date
+      widget: hidden
+      required: false
+    - name: wordpress_local_modified
+      widget: hidden
+      required: false
+  - name: body
+    label: المحتوى
+    widget: richtext
+    format: html
+    modes:
+    - rich_text
+    - raw
+    required: false
+  - name: updated
+    widget: hidden
+    required: false
+  - name: taxonomies
+    label: التصنيف
+    widget: object
+    required: false
+    fields:
+    - name: category
+      label: الأقسام
+      widget: select
+      multiple: true
+      required: false
+      options:
+      - label: البحوث العلمية
+        value: البحوث-العلمية
+      - label: المقالات الثقافية
+        value: المقالات-الثقافية
+      - label: رسائل اكاديمية (الاشراف)
+        value: رسائل-اكاديمية-الاشراف
+      - label: غير مصنف
+        value: غير-مصنف
+- name: books
+  label: الكتب
+  folder: content/books
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{slug}}'
+  identifier_field: title
+  filter:
+    field: template
+    pattern: book.html
+  fields:
+  - name: title
+    label: العنوان
+    widget: string
+  - name: date
+    label: التاريخ
+    widget: datetime
+  - name: draft
+    label: مسودة
+    widget: boolean
+    default: true
+  - name: path
+    label: رابط الصفحة — لا تغير روابط المحتوى المستورد
+    widget: string
+    pattern:
+    - ^/[^?#\\]*$
+    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+  - name: template
+    widget: hidden
+    default: book.html
+  - name: extra
+    label: بيانات الصفحة
+    widget: object
+    fields:
+    - name: wordpress_id
+      widget: hidden
+      required: false
+    - name: type
+      widget: hidden
+      default: books
+    - name: original_url
+      widget: hidden
+      required: false
+    - name: display_title
+      widget: hidden
+      required: false
+    - name: image
+      label: الصورة
+      widget: image
+      required: false
+    - name: image_link
+      widget: hidden
+      required: false
+    - name: source_metadata
+      widget: hidden
+      required: false
+    - name: terms
+      widget: hidden
+      required: false
+    - name: archive_source_path
+      widget: hidden
+      required: false
+    - name: seo_title
+      widget: hidden
+      required: false
+    - name: seo_meta
+      widget: hidden
+      required: false
+    - name: canonical_url
+      widget: hidden
+      required: false
+    - name: wordpress_title
+      widget: hidden
+      required: false
+    - name: initial_title
+      widget: hidden
+      required: false
+    - name: wordpress_local_date
+      widget: hidden
+      required: false
+    - name: wordpress_local_modified
+      widget: hidden
+      required: false
+  - name: body
+    label: المحتوى
+    widget: richtext
+    format: html
+    modes:
+    - rich_text
+    - raw
+    required: false
+  - name: updated
+    widget: hidden
+    required: false
+  - name: taxonomies
+    label: التصنيف
+    widget: object
+    required: false
+    fields:
+    - name: books_taxonomy
+      label: الأقسام
+      widget: select
+      multiple: true
+      required: false
+      options:
+      - label: كتب علمية
+        value: كتب-علمية
+      - label: كتب مترجمة
+        value: كتب-مترجمة
+      - label: معاجم
+        value: معاجم
+      - label: كتب ثقافيه
+        value: كتب-ثقافيه
+      - label: اشعار دواوين
+        value: اشعار-دواوين
+- name: lectures
+  label: المحاضرات واللقاءات
+  folder: content/lectures
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{slug}}'
+  identifier_field: title
+  filter:
+    field: template
+    pattern: lecture.html
+  fields:
+  - name: title
+    label: العنوان
+    widget: string
+  - name: date
+    label: التاريخ
+    widget: datetime
+  - name: draft
+    label: مسودة
+    widget: boolean
+    default: true
+  - name: path
+    label: رابط الصفحة — لا تغير روابط المحتوى المستورد
+    widget: string
+    pattern:
+    - ^/[^?#\\]*$
+    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+  - name: template
+    widget: hidden
+    default: lecture.html
+  - name: extra
+    label: بيانات الصفحة
+    widget: object
+    fields:
+    - name: wordpress_id
+      widget: hidden
+      required: false
+    - name: type
+      widget: hidden
+      default: lectures
+    - name: original_url
+      widget: hidden
+      required: false
+    - name: display_title
+      widget: hidden
+      required: false
+    - name: image
+      label: الصورة
+      widget: image
+      required: false
+    - name: image_link
+      widget: hidden
+      required: false
+    - name: source_metadata
+      widget: hidden
+      required: false
+    - name: terms
+      widget: hidden
+      required: false
+    - name: archive_source_path
+      widget: hidden
+      required: false
+    - name: seo_title
+      widget: hidden
+      required: false
+    - name: seo_meta
+      widget: hidden
+      required: false
+    - name: canonical_url
+      widget: hidden
+      required: false
+    - name: wordpress_title
+      widget: hidden
+      required: false
+    - name: initial_title
+      widget: hidden
+      required: false
+    - name: wordpress_local_date
+      widget: hidden
+      required: false
+    - name: wordpress_local_modified
+      widget: hidden
+      required: false
+  - name: body
+    label: المحتوى
+    widget: richtext
+    format: html
+    modes:
+    - rich_text
+    - raw
+    required: false
+  - name: updated
+    widget: hidden
+    required: false
+  - name: taxonomies
+    label: التصنيف
+    widget: object
+    required: false
+    fields:
+    - name: lectures_taxonomy
+      label: الأقسام
+      widget: select
+      multiple: true
+      required: false
+      options:
+      - label: لقاءات إعلامية
+        value: لقاءات-إعلامية
+      - label: محاضرات في الثقافة العلمية
+        value: محاضرات-في-الثقافة-العلمية
+      - label: مؤتمرات
+        value: مؤتمرات
+      - label: فعاليات ثقافية
+        value: فعاليات-ثقافية
+      - label: محاضرات اكاديمية
+        value: محاضرات-اكاديمية
+- name: training_courses
+  label: الدورات التدريبية
+  folder: content/training_courses
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{slug}}'
+  identifier_field: title
+  filter:
+    field: template
+    pattern: course.html
+  fields:
+  - name: title
+    label: العنوان
+    widget: string
+  - name: date
+    label: التاريخ
+    widget: datetime
+  - name: draft
+    label: مسودة
+    widget: boolean
+    default: true
+  - name: path
+    label: رابط الصفحة — لا تغير روابط المحتوى المستورد
+    widget: string
+    pattern:
+    - ^/[^?#\\]*$
+    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+  - name: template
+    widget: hidden
+    default: course.html
+  - name: extra
+    label: بيانات الصفحة
+    widget: object
+    fields:
+    - name: wordpress_id
+      widget: hidden
+      required: false
+    - name: type
+      widget: hidden
+      default: training_courses
+    - name: original_url
+      widget: hidden
+      required: false
+    - name: display_title
+      widget: hidden
+      required: false
+    - name: image
+      label: الصورة
+      widget: image
+      required: false
+    - name: image_link
+      widget: hidden
+      required: false
+    - name: source_metadata
+      widget: hidden
+      required: false
+    - name: terms
+      widget: hidden
+      required: false
+    - name: archive_source_path
+      widget: hidden
+      required: false
+    - name: seo_title
+      widget: hidden
+      required: false
+    - name: seo_meta
+      widget: hidden
+      required: false
+    - name: canonical_url
+      widget: hidden
+      required: false
+    - name: wordpress_title
+      widget: hidden
+      required: false
+    - name: initial_title
+      widget: hidden
+      required: false
+    - name: wordpress_local_date
+      widget: hidden
+      required: false
+    - name: wordpress_local_modified
+      widget: hidden
+      required: false
+  - name: body
+    label: المحتوى
+    widget: richtext
+    format: html
+    modes:
+    - rich_text
+    - raw
+    required: false
+  - name: updated
+    widget: hidden
+    required: false
+  - name: taxonomies
+    label: التصنيف
+    widget: object
+    required: false
+    fields:
+    - name: training_courses_taxonomy
+      label: الأقسام
+      widget: select
+      multiple: true
+      required: false
+      options:
+      - label: مؤتمرات
+        value: مؤتمرات
+      - label: دورات مسجلة
+        value: دورات-مسجلة
+      - label: دورات مهنيه
+        value: دورات-مهنيه
+- name: models
+  label: النماذج التنظيرية
+  folder: content/models
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{slug}}'
+  identifier_field: title
+  filter:
+    field: template
+    pattern: model.html
+  fields:
+  - name: title
+    label: العنوان
+    widget: string
+  - name: date
+    label: التاريخ
+    widget: datetime
+  - name: draft
+    label: مسودة
+    widget: boolean
+    default: true
+  - name: path
+    label: رابط الصفحة — لا تغير روابط المحتوى المستورد
+    widget: string
+    pattern:
+    - ^/[^?#\\]*$
+    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+  - name: template
+    widget: hidden
+    default: model.html
+  - name: extra
+    label: بيانات الصفحة
+    widget: object
+    fields:
+    - name: wordpress_id
+      widget: hidden
+      required: false
+    - name: type
+      widget: hidden
+      default: models
+    - name: original_url
+      widget: hidden
+      required: false
+    - name: display_title
+      widget: hidden
+      required: false
+    - name: image
+      label: الصورة
+      widget: image
+      required: false
+    - name: image_link
+      widget: hidden
+      required: false
+    - name: source_metadata
+      widget: hidden
+      required: false
+    - name: terms
+      widget: hidden
+      required: false
+    - name: archive_source_path
+      widget: hidden
+      required: false
+    - name: seo_title
+      widget: hidden
+      required: false
+    - name: seo_meta
+      widget: hidden
+      required: false
+    - name: canonical_url
+      widget: hidden
+      required: false
+    - name: wordpress_title
+      widget: hidden
+      required: false
+    - name: initial_title
+      widget: hidden
+      required: false
+    - name: wordpress_local_date
+      widget: hidden
+      required: false
+    - name: wordpress_local_modified
+      widget: hidden
+      required: false
+  - name: body
+    label: المحتوى
+    widget: richtext
+    format: html
+    modes:
+    - rich_text
+    - raw
+    required: false
+  - name: updated
+    widget: hidden
+    required: false
+  - name: taxonomies
+    label: التصنيف
+    widget: object
+    required: false
+    fields:
+    - name: models_taxonomy
+      label: الأقسام
+      widget: select
+      multiple: true
+      required: false
+      options:
+      - label: النموذج السداسي لعلم الإبداع
+        value: النموذج-السداسي-لعلم-الإبداع
+      - label: نموذج نعاطي الفنان
+        value: نموذج-نعاطي-الفنان
+      - label: نموذج مستويات التعاطي والادمان
+        value: نموذج-مستويات-التعاطي-والادمان
+      - label: نموذج تصنيف أساليب تنمية الابداع
+        value: نموذج-تصنيف-أساليب-تنمية-الابداع
+      - label: نموذج الوعي بالإبداع
+        value: نموذج-الوعي-بالإبداع
+- name: science
+  label: علم الإبداع
+  folder: content/science
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{slug}}'
+  identifier_field: title
+  filter:
+    field: template
+    pattern: science.html
+  fields:
+  - name: title
+    label: العنوان
+    widget: string
+  - name: date
+    label: التاريخ
+    widget: datetime
+  - name: draft
+    label: مسودة
+    widget: boolean
+    default: true
+  - name: path
+    label: رابط الصفحة — لا تغير روابط المحتوى المستورد
+    widget: string
+    pattern:
+    - ^/[^?#\\]*$
+    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+  - name: template
+    widget: hidden
+    default: science.html
+  - name: extra
+    label: بيانات الصفحة
+    widget: object
+    fields:
+    - name: wordpress_id
+      widget: hidden
+      required: false
+    - name: type
+      widget: hidden
+      default: science
+    - name: original_url
+      widget: hidden
+      required: false
+    - name: display_title
+      widget: hidden
+      required: false
+    - name: image
+      label: الصورة
+      widget: image
+      required: false
+    - name: image_link
+      widget: hidden
+      required: false
+    - name: source_metadata
+      widget: hidden
+      required: false
+    - name: terms
+      widget: hidden
+      required: false
+    - name: archive_source_path
+      widget: hidden
+      required: false
+    - name: seo_title
+      widget: hidden
+      required: false
+    - name: seo_meta
+      widget: hidden
+      required: false
+    - name: canonical_url
+      widget: hidden
+      required: false
+    - name: wordpress_title
+      widget: hidden
+      required: false
+    - name: initial_title
+      widget: hidden
+      required: false
+    - name: wordpress_local_date
+      widget: hidden
+      required: false
+    - name: wordpress_local_modified
+      widget: hidden
+      required: false
+  - name: body
+    label: المحتوى
+    widget: richtext
+    format: html
+    modes:
+    - rich_text
+    - raw
+    required: false
+  - name: updated
+    widget: hidden
+    required: false
+  - name: taxonomies
+    label: التصنيف
+    widget: object
+    required: false
+    fields:
+    - name: science_taxonomy
+      label: الأقسام
+      widget: select
+      multiple: true
+      required: false
+      options:
+      - label: عن علم الابداع
+        value: عن-علم-الابداع
+      - label: قاعدة دراسات علم الإبداع
+        value: قاعدة-دراسات-علم-الإبداع
+      - label: معجم مفاهيم ونظريات علم الإبداع
+        value: مفاهيم-علم-الابداع
+      - label: دبلوم علم الإبداع وتطبيقاته
+        value: دبلوم-علم-الإبداع
+      - label: مؤسسة علم الإبداع
+        value: مؤسسة-علم-الإبداع
+      - label: نموذج تصنيف دراسات علم الابداع
+        value: دراسات-علم-الابداع
+- name: pages
+  label: الصفحات
+  folder: content/pages
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{slug}}'
+  identifier_field: title
+  filter:
+    field: template
+    pattern: page.html
+  fields:
+  - &id004
+    name: title
+    label: العنوان
+    widget: string
+  - &id005
+    name: date
+    label: التاريخ
+    widget: datetime
+  - &id006
+    name: draft
+    label: مسودة
+    widget: boolean
+    default: true
+  - &id007
+    name: path
+    label: رابط الصفحة — لا تغير روابط المحتوى المستورد
+    widget: string
+    pattern:
+    - ^/[^?#\\]*$
+    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+  - &id008
+    name: template
+    widget: hidden
+    default: page.html
+  - &id009
+    name: extra
+    label: بيانات الصفحة
+    widget: object
+    fields:
+    - name: wordpress_id
+      widget: hidden
+      required: false
+    - name: type
+      widget: hidden
+      default: page
+    - name: original_url
+      widget: hidden
+      required: false
+    - name: display_title
+      widget: hidden
+      required: false
+    - name: image
+      label: الصورة
+      widget: image
+      required: false
+    - name: image_link
+      widget: hidden
+      required: false
+    - name: source_metadata
+      widget: hidden
+      required: false
+    - name: terms
+      widget: hidden
+      required: false
+    - name: archive_source_path
+      widget: hidden
+      required: false
+    - name: seo_title
+      widget: hidden
+      required: false
+    - name: seo_meta
+      widget: hidden
+      required: false
+    - name: canonical_url
+      widget: hidden
+      required: false
+    - name: wordpress_title
+      widget: hidden
+      required: false
+    - name: initial_title
+      widget: hidden
+      required: false
+    - name: wordpress_local_date
+      widget: hidden
+      required: false
+    - name: wordpress_local_modified
+      widget: hidden
+      required: false
+  - name: body
+    label: المحتوى
+    widget: richtext
+    format: html
+    modes:
+    - rich_text
+    - raw
+    required: false
+  - &id010
+    name: updated
+    widget: hidden
+    required: false
+  - &id011
+    name: taxonomies
+    widget: hidden
+    required: false
+- name: slides
+  label: الأخبار والفعاليات
+  folder: content/slides
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{slug}}'
+  identifier_field: title
+  filter:
+    field: template
+    pattern: slide.html
+  fields:
+  - name: title
+    label: العنوان
+    widget: string
+  - name: date
+    label: التاريخ
+    widget: datetime
+  - name: draft
+    label: مسودة
+    widget: boolean
+    default: true
+  - name: path
+    label: رابط الصفحة — لا تغير روابط المحتوى المستورد
+    widget: string
+    pattern:
+    - ^/[^?#\\]*$
+    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+  - name: template
+    widget: hidden
+    default: slide.html
+  - name: extra
+    label: بيانات الصفحة
+    widget: object
+    fields:
+    - name: wordpress_id
+      widget: hidden
+      required: false
+    - name: type
+      widget: hidden
+      default: home_slider
+    - name: original_url
+      widget: hidden
+      required: false
+    - name: display_title
+      widget: hidden
+      required: false
+    - name: image
+      label: الصورة
+      widget: image
+      required: false
+    - name: image_link
+      widget: hidden
+      required: false
+    - name: source_metadata
+      widget: hidden
+      required: false
+    - name: terms
+      widget: hidden
+      required: false
+    - name: archive_source_path
+      widget: hidden
+      required: false
+    - name: seo_title
+      widget: hidden
+      required: false
+    - name: seo_meta
+      widget: hidden
+      required: false
+    - name: canonical_url
+      widget: hidden
+      required: false
+    - name: wordpress_title
+      widget: hidden
+      required: false
+    - name: initial_title
+      widget: hidden
+      required: false
+    - name: wordpress_local_date
+      widget: hidden
+      required: false
+    - name: wordpress_local_modified
+      widget: hidden
+      required: false
+  - name: body
+    label: المحتوى
+    widget: richtext
+    format: html
+    modes:
+    - rich_text
+    - raw
+    required: false
+  - name: updated
+    widget: hidden
+    required: false
+  - name: taxonomies
+    widget: hidden
+    required: false
+- name: features
+  label: مجالات الاهتمام
+  folder: content/features
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{slug}}'
+  identifier_field: title
+  filter:
+    field: template
+    pattern: feature.html
+  fields:
+  - name: title
+    label: العنوان
+    widget: string
+  - name: date
+    label: التاريخ
+    widget: datetime
+  - name: draft
+    label: مسودة
+    widget: boolean
+    default: true
+  - name: path
+    label: رابط الصفحة — لا تغير روابط المحتوى المستورد
+    widget: string
+    pattern:
+    - ^/[^?#\\]*$
+    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+  - name: template
+    widget: hidden
+    default: feature.html
+  - name: extra
+    label: بيانات الصفحة
+    widget: object
+    fields:
+    - name: wordpress_id
+      widget: hidden
+      required: false
+    - name: type
+      widget: hidden
+      default: home_features
+    - name: original_url
+      widget: hidden
+      required: false
+    - name: display_title
+      widget: hidden
+      required: false
+    - name: image
+      label: الصورة
+      widget: image
+      required: false
+    - name: image_link
+      widget: hidden
+      required: false
+    - name: source_metadata
+      widget: hidden
+      required: false
+    - name: terms
+      widget: hidden
+      required: false
+    - name: archive_source_path
+      widget: hidden
+      required: false
+    - name: seo_title
+      widget: hidden
+      required: false
+    - name: seo_meta
+      widget: hidden
+      required: false
+    - name: canonical_url
+      widget: hidden
+      required: false
+    - name: wordpress_title
+      widget: hidden
+      required: false
+    - name: initial_title
+      widget: hidden
+      required: false
+    - name: wordpress_local_date
+      widget: hidden
+      required: false
+    - name: wordpress_local_modified
+      widget: hidden
+      required: false
+  - name: body
+    label: المحتوى
+    widget: richtext
+    format: html
+    modes:
+    - rich_text
+    - raw
+    required: false
+  - name: updated
+    widget: hidden
+    required: false
+  - name: taxonomies
+    widget: hidden
+    required: false
+- name: how-we-work
+  label: كيف نعمل
+  folder: content/how-we-work
+  create: true
+  extension: md
+  format: yaml-frontmatter
+  slug: '{{slug}}'
+  identifier_field: title
+  filter:
+    field: template
+    pattern: page.html
+  fields:
+  - name: title
+    label: العنوان
+    widget: string
+  - name: date
+    label: التاريخ
+    widget: datetime
+  - name: draft
+    label: مسودة
+    widget: boolean
+    default: true
+  - name: path
+    label: رابط الصفحة — لا تغير روابط المحتوى المستورد
+    widget: string
+    pattern:
+    - ^/[^?#\\]*$
+    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+  - name: template
+    widget: hidden
+    default: page.html
+  - name: extra
+    label: بيانات الصفحة
+    widget: object
+    fields:
+    - name: wordpress_id
+      widget: hidden
+      required: false
+    - name: type
+      widget: hidden
+      default: how_we_work
+    - name: original_url
+      widget: hidden
+      required: false
+    - name: display_title
+      widget: hidden
+      required: false
+    - name: image
+      label: الصورة
+      widget: image
+      required: false
+    - name: image_link
+      widget: hidden
+      required: false
+    - name: source_metadata
+      widget: hidden
+      required: false
+    - name: terms
+      widget: hidden
+      required: false
+    - name: archive_source_path
+      widget: hidden
+      required: false
+    - name: seo_title
+      widget: hidden
+      required: false
+    - name: seo_meta
+      widget: hidden
+      required: false
+    - name: canonical_url
+      widget: hidden
+      required: false
+    - name: wordpress_title
+      widget: hidden
+      required: false
+    - name: initial_title
+      widget: hidden
+      required: false
+    - name: wordpress_local_date
+      widget: hidden
+      required: false
+    - name: wordpress_local_modified
+      widget: hidden
+      required: false
+  - name: body
+    label: المحتوى
+    widget: richtext
+    format: html
+    modes:
+    - rich_text
+    - raw
+    required: false
+  - name: updated
+    widget: hidden
+    required: false
+  - name: taxonomies
+    widget: hidden
+    required: false
+- name: biography-and-contact
+  label: السيرة والتواصل
+  files:
+  - name: page-10
+    label: د . أيمن عامر
+    file: content/pages/10.md
+    fields:
+    - name: title
+      label: العنوان
+      widget: string
+    - name: date
+      label: التاريخ
+      widget: datetime
+    - name: draft
+      label: مسودة
+      widget: boolean
+      default: true
+    - name: path
+      label: رابط الصفحة — لا تغير روابط المحتوى المستورد
+      widget: string
+      pattern:
+      - ^/[^?#\\]*$
+      - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+    - name: template
+      widget: hidden
+    - name: extra
+      label: بيانات الصفحة
+      widget: object
+      fields:
+      - name: wordpress_id
+        widget: hidden
+        required: false
+      - name: type
+        widget: hidden
+      - name: original_url
+        widget: hidden
+        required: false
+      - name: display_title
+        widget: hidden
+        required: false
+      - name: image
+        label: الصورة
+        widget: image
+        required: false
+      - name: image_link
+        widget: hidden
+        required: false
+      - name: sections
+        label: الأقسام
+        widget: list
+        fields:
+        - name: title
+          label: العنوان
+          widget: string
+        - name: html
+          label: المحتوى
+          widget: richtext
+          format: html
+          modes:
+          - raw
+          - rich_text
+      - name: download
+        label: تحميل السيرة الذاتية
+        widget: object
+        required: false
+        fields:
+        - name: title
+          label: النص
+          widget: string
+        - name: url
+          label: الملف
+          widget: file
+      - name: source_metadata
+        widget: hidden
+        required: false
+      - name: terms
+        widget: hidden
+        required: false
+      - name: archive_source_path
+        widget: hidden
+        required: false
+      - name: seo_title
+        widget: hidden
+        required: false
+      - name: seo_meta
+        widget: hidden
+        required: false
+      - name: canonical_url
+        widget: hidden
+        required: false
+      - name: wordpress_title
+        widget: hidden
+        required: false
+      - name: initial_title
+        widget: hidden
+        required: false
+      - name: wordpress_local_date
+        widget: hidden
+        required: false
+      - name: wordpress_local_modified
+        widget: hidden
+        required: false
+    - name: body
+      label: المحتوى
+      widget: richtext
+      format: html
+      modes:
+      - rich_text
+      - raw
+      required: false
+    - name: updated
+      widget: hidden
+      required: false
+    - name: taxonomies
+      widget: hidden
+      required: false
+  - name: page-59
+    label: السيرة الذاتية التفصيلية
+    file: content/pages/59.md
+    fields:
+    - name: title
+      label: العنوان
+      widget: string
+    - name: date
+      label: التاريخ
+      widget: datetime
+    - name: draft
+      label: مسودة
+      widget: boolean
+      default: true
+    - name: path
+      label: رابط الصفحة — لا تغير روابط المحتوى المستورد
+      widget: string
+      pattern:
+      - ^/[^?#\\]*$
+      - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+    - name: template
+      widget: hidden
+    - name: extra
+      label: بيانات الصفحة
+      widget: object
+      fields:
+      - name: wordpress_id
+        widget: hidden
+        required: false
+      - name: type
+        widget: hidden
+      - name: original_url
+        widget: hidden
+        required: false
+      - name: display_title
+        widget: hidden
+        required: false
+      - name: image
+        label: الصورة
+        widget: image
+        required: false
+      - name: image_link
+        widget: hidden
+        required: false
+      - name: sections
+        label: الأقسام
+        widget: list
+        fields:
+        - name: title
+          label: العنوان
+          widget: string
+        - name: html
+          label: المحتوى
+          widget: richtext
+          format: html
+          modes:
+          - raw
+          - rich_text
+      - name: download
+        label: تحميل السيرة الذاتية
+        widget: object
+        required: false
+        fields:
+        - name: title
+          label: النص
+          widget: string
+        - name: url
+          label: الملف
+          widget: file
+      - name: source_metadata
+        widget: hidden
+        required: false
+      - name: terms
+        widget: hidden
+        required: false
+      - name: archive_source_path
+        widget: hidden
+        required: false
+      - name: seo_title
+        widget: hidden
+        required: false
+      - name: seo_meta
+        widget: hidden
+        required: false
+      - name: canonical_url
+        widget: hidden
+        required: false
+      - name: wordpress_title
+        widget: hidden
+        required: false
+      - name: initial_title
+        widget: hidden
+        required: false
+      - name: wordpress_local_date
+        widget: hidden
+        required: false
+      - name: wordpress_local_modified
+        widget: hidden
+        required: false
+    - name: body
+      label: المحتوى
+      widget: richtext
+      format: html
+      modes:
+      - rich_text
+      - raw
+      required: false
+    - name: updated
+      widget: hidden
+      required: false
+    - name: taxonomies
+      widget: hidden
+      required: false
+  - name: page-12
+    label: اتصل بنا
+    file: content/pages/12.md
+    fields:
+    - name: title
+      label: العنوان
+      widget: string
+    - name: date
+      label: التاريخ
+      widget: datetime
+    - name: draft
+      label: مسودة
+      widget: boolean
+      default: true
+    - name: path
+      label: رابط الصفحة — لا تغير روابط المحتوى المستورد
+      widget: string
+      pattern:
+      - ^/[^?#\\]*$
+      - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+    - name: template
+      widget: hidden
+    - name: extra
+      label: بيانات الصفحة
+      widget: object
+      fields:
+      - name: wordpress_id
+        widget: hidden
+        required: false
+      - name: type
+        widget: hidden
+      - name: original_url
+        widget: hidden
+        required: false
+      - name: display_title
+        widget: hidden
+        required: false
+      - name: image
+        label: الصورة
+        widget: image
+        required: false
+      - name: image_link
+        widget: hidden
+        required: false
+      - name: form_html
+        widget: hidden
+      - name: form_id
+        widget: hidden
+      - name: source_metadata
+        widget: hidden
+        required: false
+      - name: terms
+        widget: hidden
+        required: false
+      - name: archive_source_path
+        widget: hidden
+        required: false
+      - name: seo_title
+        widget: hidden
+        required: false
+      - name: seo_meta
+        widget: hidden
+        required: false
+      - name: canonical_url
+        widget: hidden
+        required: false
+      - name: wordpress_title
+        widget: hidden
+        required: false
+      - name: initial_title
+        widget: hidden
+        required: false
+      - name: wordpress_local_date
+        widget: hidden
+        required: false
+      - name: wordpress_local_modified
+        widget: hidden
+        required: false
+    - name: body
+      label: المحتوى
+      widget: richtext
+      format: html
+      modes:
+      - rich_text
+      - raw
+      required: false
+    - name: updated
+      widget: hidden
+      required: false
+    - name: taxonomies
+      widget: hidden
+      required: false
+- name: homepage
+  label: الصفحة الرئيسية
+  files:
+  - name: home
+    label: الأخبار والفعاليات
+    file: data/home.json
+    fields:
+    - name: slides
+      label: الصور
+      widget: list
+      fields:
+      - name: image
+        label: الصورة
+        widget: image
+      - name: alt
+        label: وصف الصورة
+        widget: string
+        required: false
+    - name: features
+      label: مجالات الاهتمام
+      widget: list
+      fields:
+      - name: title
+        label: العنوان
+        widget: string
+      - name: html
+        label: المحتوى
+        widget: richtext
+        format: html
+        modes:
+        - raw
+        - rich_text
+    - name: rails
+      widget: hidden
+    - name: updated
+      widget: hidden
+      required: false
+    - name: taxonomies
+      widget: hidden
+      required: false
+    - name: additional_html
+      widget: hidden
+      required: false
+- name: site-settings
+  label: إعدادات الموقع والقوائم
+  files:
+  - name: settings
+    label: الهوية والتواصل والتنقل
+    file: data/site.json
+    fields:
+    - name: title
+      label: الاسم
+      widget: string
+    - name: logo
+      label: الشعار
+      widget: image
+    - name: contact_html
+      label: بيانات التواصل
+      widget: richtext
+      format: html
+      modes:
+      - rich_text
+      - raw
+    - name: navigation
+      label: القائمة الرئيسية
+      widget: list
+      fields:
+      - &id001
+        name: id
+        widget: hidden
+        required: false
+      - &id002
+        name: title
+        label: النص
+        widget: string
+      - &id003
+        name: url
+        label: الرابط
+        widget: string
+      - name: children
+        label: القائمة الفرعية
+        widget: list
+        required: false
+        fields:
+        - *id001
+        - *id002
+        - *id003
+        - name: children
+          widget: hidden
+          required: false
+    - name: social
+      label: روابط التواصل
+      widget: list
+      fields:
+      - name: label
+        label: النص
+        widget: string
+      - name: url
+        label: الرابط
+        widget: string
+    - name: footer_html
+      label: تذييل الموقع — محتوى محفوظ
+      widget: richtext
+      format: html
+      modes:
+      - raw
+      required: false
+    - name: logo_link
+      widget: hidden
+- name: archive-settings
+  label: عناوين صفحات الأقسام
+  files:
+  - name: '170'
+    label: المدونة
+    file: content/pages/170.md
+    fields:
+    - *id004
+    - *id005
+    - *id006
+    - *id007
+    - *id008
+    - *id009
+    - *id010
+    - *id011
+  - name: '18'
+    label: المكتبة
+    file: content/pages/18.md
+    fields:
+    - *id004
+    - *id005
+    - *id006
+    - *id007
+    - *id008
+    - *id009
+    - *id010
+    - *id011
+  - name: '181'
+    label: المدونة
+    file: content/pages/181.md
+    fields:
+    - *id004
+    - *id005
+    - *id006
+    - *id007
+    - *id008
+    - *id009
+    - *id010
+    - *id011
+  - name: '225'
+    label: المدونة
+    file: content/pages/225.md
+    fields:
+    - *id004
+    - *id005
+    - *id006
+    - *id007
+    - *id008
+    - *id009
+    - *id010
+    - *id011
+  - name: '37'
+    label: المحاضرات
+    file: content/pages/37.md
+    fields:
+    - *id004
+    - *id005
+    - *id006
+    - *id007
+    - *id008
+    - *id009
+    - *id010
+    - *id011
+  - name: '39'
+    label: الدورات التدريبة
+    file: content/pages/39.md
+    fields:
+    - *id004
+    - *id005
+    - *id006
+    - *id007
+    - *id008
+    - *id009
+    - *id010
+    - *id011
+  - name: '695'
+    label: المدونة
+    file: content/pages/695.md
+    fields:
+    - *id004
+    - *id005
+    - *id006
+    - *id007
+    - *id008
+    - *id009
+    - *id010
+    - *id011
+  - name: '696'
+    label: المدونة
+    file: content/pages/696.md
+    fields:
+    - *id004
+    - *id005
+    - *id006
+    - *id007
+    - *id008
+    - *id009
+    - *id010
+    - *id011
+  - name: '713'
+    label: المدونة
+    file: content/pages/713.md
+    fields:
+    - *id004
+    - *id005
+    - *id006
+    - *id007
+    - *id008
+    - *id009
+    - *id010
+    - *id011
+  - name: '8'
+    label: المدونة
+    file: content/pages/8.md
+    fields:
+    - *id004
+    - *id005
+    - *id006
+    - *id007
+    - *id008
+    - *id009
+    - *id010
+    - *id011

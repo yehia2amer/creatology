@@ -1,0 +1,20 @@
+base_url = "https://draymanamer.com"
+title = "Creatology"
+description = "موقع للاستشارات الحديثه"
+default_language = "ar"
+theme = "creatology"
+compile_sass = false
+minify_html = false
+build_search_index = false
+generate_feeds = false
+skip_content_templating = ["**/*.md"]
+taxonomies = [{name = "books_taxonomy", paginate_by = 20, paginate_path = "page", render = false},{name = "category", paginate_by = 20, paginate_path = "page", render = false},{name = "lectures_taxonomy", paginate_by = 20, paginate_path = "page", render = false},{name = "training_courses_taxonomy", paginate_by = 20, paginate_path = "page", render = false},{name = "science_taxonomy", paginate_by = 20, paginate_path = "page", render = false},{name = "models_taxonomy", paginate_by = 20, paginate_path = "page", render = false}]
+[slugify]
+paths = "off"
+taxonomies = "off"
+anchors = "safe"
+[markdown]
+smart_punctuation = false
+external_links_target_blank = false
+[extra]
+contact_endpoint = "https://draymanamer.com/wp-json/contact-form-7/v1/contact-forms/32/feedback"

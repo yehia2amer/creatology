@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<section class="wrap page-heading"><h1>{{ taxonomy.name }}</h1><ul>{% for term in terms %}<li><a href="{{ term.permalink }}">{{ term.name | replace(from="-",to=" ") }}</a></li>{% endfor %}</ul></section>{% endblock %}

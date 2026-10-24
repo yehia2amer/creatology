@@ -1,0 +1,4 @@
+name = "Creatology Native"
+description = "Arabic academic and editorial Zola theme"
+min_version = "0.23.6"
+license = "MIT"

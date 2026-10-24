@@ -1,0 +1,6 @@
+{
+  "zola": "0.23.6",
+  "sveltia": "0.250.2",
+  "sveltia_source": "https://cdn.jsdelivr.net/npm/@sveltia/cms@0.250.2/dist/sveltia-cms.js",
+  "sveltia_sha256": "38481b7c5861279aa05052a650b8bf29700ac559bb15fe1a3d97ecd756dbc44d"
+}

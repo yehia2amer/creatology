@@ -1,0 +1,20 @@
+(() => {
+ const local = ['localhost','127.0.0.1'].includes(location.hostname);
+ const localURL = value => { try { const u = new URL(value, location.href); if (u.hostname === 'draymanamer.com') return location.origin + u.pathname + u.search + u.hash; } catch {} return value; };
+ if (local) {
+   document.querySelectorAll('img[src],iframe[src],video[src],source[src]').forEach(el => el.src = localURL(el.getAttribute('src')));
+   document.querySelectorAll('[srcset]').forEach(el => el.setAttribute('srcset',el.getAttribute('srcset').replaceAll('https://draymanamer.com',location.origin)));
+   document.addEventListener('click',e => { const a=e.target.closest('a[href]'); if(a && !e.ctrlKey && !e.metaKey && !a.hasAttribute('download') && a.target !== '_blank'){ const u=localURL(a.href); if(u!==a.href){e.preventDefault();location.assign(u);} } });
+ }
+ const menu=document.querySelector('.menu-toggle');menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));document.querySelector('.site-header').classList.toggle('menu-open',open);});
+ document.querySelectorAll('.submenu-toggle').forEach(b=>b.addEventListener('click',()=>{const open=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',String(open));b.parentElement.classList.toggle('is-open',open);}));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelector('.site-header')?.classList.remove('menu-open');menu?.setAttribute('aria-expanded','false');document.querySelectorAll('.is-open').forEach(n=>n.classList.remove('is-open'));document.querySelectorAll('.submenu-toggle').forEach(n=>n.setAttribute('aria-expanded','false'));}});
+ const dialog=document.querySelector('#search-dialog');let index;
+ const normalize=s=>s.toLowerCase().normalize('NFKD').replace(/[\u064b-\u065f\u0670]/g,'').replace(/[أإآ]/g,'ا').replace(/ى/g,'ي');
+ const search=async q=>{ index ||= await fetch('/search-data.json').then(r=>r.json()); const results=q.trim()?index.filter(i=>normalize(i.title+' '+i.text).includes(normalize(q))).slice(0,40):[];const list=document.querySelector('#search-results');list.replaceChildren();results.forEach(i=>{const li=document.createElement('li'),a=document.createElement('a');a.href=local?localURL(i.url):i.url;a.textContent=i.title;li.append(a);list.append(li);});document.querySelector('.search-status').textContent=q?`${results.length} نتيجة`:'';};
+ document.querySelector('.search-toggle')?.addEventListener('click',()=>{dialog.showModal();document.querySelector('#site-search').focus();});
+ document.querySelector('#site-search')?.addEventListener('input',e=>search(e.target.value).catch(()=>{document.querySelector('.search-status').textContent='تعذر تحميل البحث';}));
+ const query=new URLSearchParams(location.search).get('s');if(query){dialog.showModal();document.querySelector('#site-search').value=query;search(query);}
+ const holder=document.querySelector('.contact-form'),form=holder?.querySelector('form');
+ if(form){form.removeAttribute('novalidate');form.querySelectorAll('[aria-required=true]').forEach(i=>i.required=true);form.addEventListener('submit',async e=>{e.preventDefault();if(!form.reportValidity())return;const status=holder.querySelector('.form-status'),button=form.querySelector('[type=submit]');button.disabled=true;status.textContent='Sending…';try{const r=await fetch(local?'/api/contact':holder.dataset.endpoint,{method:'POST',body:new FormData(form)});const data=await r.json();status.textContent=data.message||'Unable to send. Please try again.';if(data.status==='mail_sent')form.reset();if(!r.ok)status.textContent=data.message||'Unable to send. Please try again.';}catch{status.textContent='Unable to send. Please try again.';}finally{button.disabled=false;}});}
+})();
