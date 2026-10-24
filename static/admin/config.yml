@@ -33,9 +33,10 @@ collections:
   - name: path
     label: رابط الصفحة — لا تغير روابط المحتوى المستورد
     widget: string
+    required: false
     pattern:
     - ^/[^?#\\]*$
-    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+    - Use a site path such as /articles/new-article/. Existing imported paths are protected at build time.
   - name: template
     widget: hidden
     default: article.html
@@ -97,8 +98,8 @@ collections:
     widget: richtext
     format: html
     modes:
-    - rich_text
     - raw
+    - rich_text
     required: false
   - name: updated
     widget: hidden
@@ -147,6 +148,7 @@ collections:
   - name: path
     label: رابط الصفحة — لا تغير روابط المحتوى المستورد
     widget: string
+    required: false
     pattern:
     - ^/[^?#\\]*$
     - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
@@ -211,8 +213,8 @@ collections:
     widget: richtext
     format: html
     modes:
-    - rich_text
     - raw
+    - rich_text
     required: false
   - name: updated
     widget: hidden
@@ -263,9 +265,10 @@ collections:
   - name: path
     label: رابط الصفحة — لا تغير روابط المحتوى المستورد
     widget: string
+    required: false
     pattern:
     - ^/[^?#\\]*$
-    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+    - Use a site path such as /lectures/new-lecture/. Existing imported paths are protected at build time.
   - name: template
     widget: hidden
     default: lecture.html
@@ -327,8 +330,8 @@ collections:
     widget: richtext
     format: html
     modes:
-    - rich_text
     - raw
+    - rich_text
     required: false
   - name: updated
     widget: hidden
@@ -379,9 +382,10 @@ collections:
   - name: path
     label: رابط الصفحة — لا تغير روابط المحتوى المستورد
     widget: string
+    required: false
     pattern:
     - ^/[^?#\\]*$
-    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+    - Use a site path such as /training_courses/new-course/. Existing imported paths are protected at build time.
   - name: template
     widget: hidden
     default: course.html
@@ -443,8 +447,8 @@ collections:
     widget: richtext
     format: html
     modes:
-    - rich_text
     - raw
+    - rich_text
     required: false
   - name: updated
     widget: hidden
@@ -491,9 +495,10 @@ collections:
   - name: path
     label: رابط الصفحة — لا تغير روابط المحتوى المستورد
     widget: string
+    required: false
     pattern:
     - ^/[^?#\\]*$
-    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+    - Use a site path such as /models/new-model/. Existing imported paths are protected at build time.
   - name: template
     widget: hidden
     default: model.html
@@ -555,8 +560,8 @@ collections:
     widget: richtext
     format: html
     modes:
-    - rich_text
     - raw
+    - rich_text
     required: false
   - name: updated
     widget: hidden
@@ -607,9 +612,10 @@ collections:
   - name: path
     label: رابط الصفحة — لا تغير روابط المحتوى المستورد
     widget: string
+    required: false
     pattern:
     - ^/[^?#\\]*$
-    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+    - Use a site path such as /science/new-entry/. Existing imported paths are protected at build time.
   - name: template
     widget: hidden
     default: science.html
@@ -671,8 +677,8 @@ collections:
     widget: richtext
     format: html
     modes:
-    - rich_text
     - raw
+    - rich_text
     required: false
   - name: updated
     widget: hidden
@@ -731,7 +737,7 @@ collections:
     widget: string
     pattern:
     - ^/[^?#\\]*$
-    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+    - Use a site path such as /pages/new-page/. Existing imported paths are protected at build time.
   - &id008
     name: template
     widget: hidden
@@ -795,8 +801,8 @@ collections:
     widget: richtext
     format: html
     modes:
-    - rich_text
     - raw
+    - rich_text
     required: false
   - &id010
     name: updated
@@ -831,9 +837,10 @@ collections:
   - name: path
     label: رابط الصفحة — لا تغير روابط المحتوى المستورد
     widget: string
+    required: false
     pattern:
     - ^/[^?#\\]*$
-    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+    - Use a site path such as /slides/new-slide/. Existing imported paths are protected at build time.
   - name: template
     widget: hidden
     default: slide.html
@@ -895,8 +902,8 @@ collections:
     widget: richtext
     format: html
     modes:
-    - rich_text
     - raw
+    - rich_text
     required: false
   - name: updated
     widget: hidden
@@ -929,9 +936,10 @@ collections:
   - name: path
     label: رابط الصفحة — لا تغير روابط المحتوى المستورد
     widget: string
+    required: false
     pattern:
     - ^/[^?#\\]*$
-    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+    - Use a site path such as /features/new-feature/. Existing imported paths are protected at build time.
   - name: template
     widget: hidden
     default: feature.html
@@ -993,8 +1001,8 @@ collections:
     widget: richtext
     format: html
     modes:
-    - rich_text
     - raw
+    - rich_text
     required: false
   - name: updated
     widget: hidden
@@ -1027,9 +1035,10 @@ collections:
   - name: path
     label: رابط الصفحة — لا تغير روابط المحتوى المستورد
     widget: string
+    required: false
     pattern:
     - ^/[^?#\\]*$
-    - Use a site path such as /books/new-book/. Existing imported paths are protected at build time.
+    - Use a site path such as /how-we-work/new-step/. Existing imported paths are protected at build time.
   - name: template
     widget: hidden
     default: page.html
@@ -1091,8 +1100,8 @@ collections:
     widget: richtext
     format: html
     modes:
-    - rich_text
     - raw
+    - rich_text
     required: false
   - name: updated
     widget: hidden
@@ -1207,8 +1216,8 @@ collections:
       widget: richtext
       format: html
       modes:
-      - rich_text
       - raw
+      - rich_text
       required: false
     - name: updated
       widget: hidden
@@ -1320,8 +1329,8 @@ collections:
       widget: richtext
       format: html
       modes:
-      - rich_text
       - raw
+      - rich_text
       required: false
     - name: updated
       widget: hidden
@@ -1412,8 +1421,8 @@ collections:
       widget: richtext
       format: html
       modes:
-      - rich_text
       - raw
+      - rich_text
       required: false
     - name: updated
       widget: hidden
@@ -1482,8 +1491,8 @@ collections:
       widget: richtext
       format: html
       modes:
-      - rich_text
       - raw
+      - rich_text
     - name: navigation
       label: القائمة الرئيسية
       widget: list
