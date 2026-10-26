@@ -1,6 +1,18 @@
 {% extends "base.html" %}{% block title %}{{ page.title or page.extra.display_title or "تفاصيل الكتاب" }}{% endblock %}{% block content %}
-<article class="wrap detail-layout book-layout" data-wordpress-id="{{ page.extra.wordpress_id or 0 }}">
-<header class="article-heading"><p class="eyebrow">Creatology</p><h1>{{ page.title or page.extra.display_title or "تفاصيل الكتاب" }}</h1></header>
-{% if page.extra.image %}<figure class="detail-media">{% if page.extra.image_link %}<a href="{{ page.extra.image_link }}">{% endif %}{% set image_src=page.extra.image %}{% set image_alt=page.title or page.extra.display_title or "Creatology" %}{% set image_loading="eager" %}{% include "partials/image.html" %}{% if page.extra.image_link %}</a>{% endif %}</figure>{% endif %}
+{% set clean_body = page.content | striptags | replace(from="&nbsp;", to="") | replace(from="&#160;", to="") | trim %}
+{% set has_content = clean_body | length > 0 %}
+<article class="wrap detail-layout book-layout{% if not has_content %} is-compact-book{% endif %}" data-wordpress-id="{{ page.extra.wordpress_id or 0 }}">
+<header class="article-heading"><p class="eyebrow">مؤلفات د. أيمن عامر</p><h1>{{ page.title or page.extra.display_title or "تفاصيل الكتاب" }}</h1></header>
+{% if page.extra.image %}<figure class="detail-media"><div class="book-cover-frame">{% if page.extra.image_link %}<a href="{{ page.extra.image_link }}">{% endif %}{% set image_src=page.extra.image %}{% set image_alt=page.title or page.extra.display_title or "Creatology" %}{% set image_loading="eager" %}{% include "partials/image.html" %}{% if page.extra.image_link %}</a>{% endif %}</div></figure>{% endif %}
 <div class="prose" data-content-region>{{ page.content | safe }}</div>
+{% if not has_content %}
+<div class="book-empty-showcase">
+  <div class="book-badge-pill">مؤلف وبحث علمي منشور</div>
+  <p class="book-desc">هذا الكتاب من المؤلفات والأبحاث العلمية التخصصية للدكتور أيمن عامر في مجالات علم النفس المعرفي، وسيكولوجية الإبداع، وتطوير التفكير وحل المشكلات.</p>
+  <div class="book-callout-actions">
+    <a class="button" href="/books/">استعراض جميع مؤلفات الدكتور ←</a>
+    <a class="button secondary" href="/contact/">طلب نسخة أو التواصل الأكاديمي</a>
+  </div>
+</div>
+{% endif %}
 {% set all_terms = load_data(path="data/terms.json") %}{% set p_tax = page.taxonomies | default(value=page.extra.taxonomies | default(value={})) %}{% if p_tax %}<aside class="article-terms">{% for taxonomy, values in p_tax %}{% set tax_dict = all_terms | get(key=taxonomy, default={}) %}{% for value in values %}<a href="{{ get_taxonomy_url(kind=taxonomy, term=value) }}">{{ tax_dict | get(key=value, default=value | replace(from="-", to=" ")) }}</a>{% endfor %}{% endfor %}</aside>{% endif %}</article>{% endblock %}

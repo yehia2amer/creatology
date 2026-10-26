@@ -1,0 +1,23 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "د. أيمن عامر — Creatology",
+    "identifier": "draymanamer.com",
+    "documentationUrl": "https://draymanamer.com/about/",
+    "logoUrl": "https://draymanamer.com/wp-content/uploads/2018/09/cropped-logo-1.png"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:draymanamer.com:skills:creatology-academic-guide",
+      "displayName": "Creatology Academic & Research Guide",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://draymanamer.com/llms.txt",
+      "representativeQueries": [
+        "دكتور أيمن عامر",
+        "سيكولوجية الإبداع ونظرية Creatology",
+        "علم النفس المعرفي وحل المشكلات",
+        "مؤلفات وأبحاث الدكتور أيمن عامر"
+      ]
+    }
+  ]
+}

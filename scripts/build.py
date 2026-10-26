@@ -13,6 +13,81 @@ SITE = Path(__file__).resolve().parents[1]
 ROOT = SITE / '.local'
 (ROOT / 'reports').mkdir(parents=True, exist_ok=True)
 
+def generate_agentic_metadata(site, docs, items):
+    base_url = "https://draymanamer.com"
+    llms_lines = [
+        "# د. أيمن عامر — Creatology",
+        "",
+        "> بوابة علمية وأكاديمية متخصصة في علم النفس المعرفي، وسيكولوجية الإبداع، ونظرية Creatology، وحل المشكلات بطرق إبداعية وتطبيقاتها المعاصرة.",
+        "",
+        "## الأقسام الرئيسية",
+        f"- [الرئيسية]({base_url}/): الصفحة الرئيسية والمدخل العام للبوابة الأكاديمية",
+        f"- [عن الموقع]({base_url}/about/): نبذة تعريفية ورؤية البوابة وأهدافها التخصصية",
+        f"- [السيرة الذاتية]({base_url}/all_about_us/): السيرة الذاتية والمسيرة العلمية للأستاذ الدكتور أيمن عامر",
+        f"- [الكتب والمؤلفات]({base_url}/books/): قائمة الكتب والمؤلفات الأكاديمية في علم النفس وسيكولوجية الإبداع",
+        f"- [المحاضرات]({base_url}/lectures/): محاضرات وندوات علمية في التفكير الإبداعي وحل المشكلات",
+        f"- [الدورات التدريبية]({base_url}/training_courses/): برامج التدريب وورش العمل المتخصصة",
+        f"- [البحوث العلمية]({base_url}/category/%D8%A7%D9%84%D8%A8%D8%AD%D9%88%D8%AB-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9/): الأوراق البحثية والدراسات المحكمة المنشورة",
+        f"- [اتصل بنا]({base_url}/contact/): معلومات التواصل والاستشارات العلمية والمهنية",
+        "",
+        "## أبرز الكتب والمؤلفات",
+    ]
+    books = [it for it in items if it.get('type') == 'books' and it.get('title')]
+    for b in sorted(books, key=lambda x: str(x.get('title'))):
+        llms_lines.append(f"- [{b['title']}]({b['url']})")
+        
+    llms_lines.extend([
+        "",
+        "## الدورات والورش التدريبية",
+    ])
+    courses = [it for it in items if it.get('type') == 'training_courses' and it.get('title')]
+    for c in sorted(courses, key=lambda x: str(x.get('title'))):
+        llms_lines.append(f"- [{c['title']}]({c['url']})")
+
+    llms_lines.extend([
+        "",
+        "## الموارد والبيانات التقنية",
+        f"- [خريطة الموقع (Sitemap)]({base_url}/sitemap.xml)",
+        f"- [فهرس البحث الكامل (Search Data)]({base_url}/search-data.json)",
+        f"- [كتالوج الموارد الذكية (AI Catalog)]({base_url}/ai-catalog.json)",
+        f"- [خلاصة التحديثات (Feed)]({base_url}/feed/atom.xml)",
+        ""
+    ])
+    llms_content = "\n".join(llms_lines)
+
+    ai_catalog = {
+        "specVersion": "1.0",
+        "host": {
+            "displayName": "د. أيمن عامر — Creatology",
+            "identifier": "draymanamer.com",
+            "documentationUrl": f"{base_url}/about/",
+            "logoUrl": f"{base_url}/wp-content/uploads/2018/09/cropped-logo-1.png"
+        },
+        "entries": [
+            {
+                "identifier": "urn:air:draymanamer.com:skills:creatology-academic-guide",
+                "displayName": "Creatology Academic & Research Guide",
+                "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+                "url": f"{base_url}/llms.txt",
+                "representativeQueries": [
+                    "دكتور أيمن عامر",
+                    "سيكولوجية الإبداع ونظرية Creatology",
+                    "علم النفس المعرفي وحل المشكلات",
+                    "مؤلفات وأبحاث الدكتور أيمن عامر"
+                ]
+            }
+        ]
+    }
+    ai_catalog_content = json.dumps(ai_catalog, ensure_ascii=False, indent=2)
+
+    for target_dir in [site / 'static', site / 'public']:
+        target_dir.mkdir(parents=True, exist_ok=True)
+        (target_dir / 'llms.txt').write_text(llms_content, encoding='utf-8')
+        (target_dir / 'ai-catalog.json').write_text(ai_catalog_content, encoding='utf-8')
+        wk = target_dir / '.well-known'
+        wk.mkdir(parents=True, exist_ok=True)
+        (wk / 'ai-catalog.json').write_text(ai_catalog_content, encoding='utf-8')
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--zola', type=Path)
@@ -90,6 +165,7 @@ def main():
     (SITE / 'data/asset-versions.json').write_text(json.dumps(versions), encoding='utf-8')
     (SITE / 'static/search-data.json').write_text(json.dumps(docs, ensure_ascii=False), encoding='utf-8')
     (ROOT / 'reports/local-route-map.json').write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding='utf-8')
+    generate_agentic_metadata(SITE, docs, items)
     
     result = subprocess.run([str(zola), '--root', str(SITE), 'build'], capture_output=True, text=True, encoding='utf-8', errors='replace')
     (ROOT / 'reports/build.log').write_text(result.stdout + result.stderr, encoding='utf-8')
@@ -99,6 +175,7 @@ def main():
         
     from refresh_feeds import render
     feeds_rendered = render(SITE)
+    generate_agentic_metadata(SITE, docs, items)
     leak = [r for r in draft_paths if r and (SITE / 'public' / r.strip('/') / 'index.html').exists()]
     if leak:
         raise SystemExit('Draft output detected: ' + repr(leak))

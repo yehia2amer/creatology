@@ -232,10 +232,12 @@ def update(site):
         rail['cards'] = [new for card in rail['cards'] if (new := refresh(card)) is not None]
 
     # Synchronize slide/feature/how-we-work edits into home
-    feat_map = {'87': 0, '86': 1, '84': 2, '85': 3}
+    feat_map = {'88': 0, '87': 1, '86': 2, '85': 3, '84': 2}
     hww_map = {'1': 0, '2': 1, '3': 2, '4': 3, '89': 0, '90': 1, '91': 2, '92': 3}
     for doc in docs.values():
         if not doc.get('changed'):
+            continue
+        if doc['front'].get('draft'):
             continue
         wp_id = str(doc.get('extra', {}).get('wordpress_id', ''))
         hww_id = str(doc.get('extra', {}).get('source_metadata', {}).get('how_we_work_id_number', ''))
