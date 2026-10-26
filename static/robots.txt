@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yehia2amer.github.io/creatology/sitemap.xml
+LLMs: https://yehia2amer.github.io/creatology/llms.txt
+AI-Catalog: https://yehia2amer.github.io/creatology/ai-catalog.json
