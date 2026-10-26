@@ -3,14 +3,14 @@
 > بوابة علمية وأكاديمية متخصصة في علم النفس المعرفي، وسيكولوجية الإبداع، ونظرية Creatology، وحل المشكلات بطرق إبداعية وتطبيقاتها المعاصرة.
 
 ## الأقسام الرئيسية
-- [الرئيسية](https://draymanamer.com/): الصفحة الرئيسية والمدخل العام للبوابة الأكاديمية
-- [عن الموقع](https://draymanamer.com/about/): نبذة تعريفية ورؤية البوابة وأهدافها التخصصية
-- [السيرة الذاتية](https://draymanamer.com/all_about_us/): السيرة الذاتية والمسيرة العلمية للأستاذ الدكتور أيمن عامر
-- [الكتب والمؤلفات](https://draymanamer.com/books/): قائمة الكتب والمؤلفات الأكاديمية في علم النفس وسيكولوجية الإبداع
-- [المحاضرات](https://draymanamer.com/lectures/): محاضرات وندوات علمية في التفكير الإبداعي وحل المشكلات
-- [الدورات التدريبية](https://draymanamer.com/training_courses/): برامج التدريب وورش العمل المتخصصة
-- [البحوث العلمية](https://draymanamer.com/category/%D8%A7%D9%84%D8%A8%D8%AD%D9%88%D8%AB-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9/): الأوراق البحثية والدراسات المحكمة المنشورة
-- [اتصل بنا](https://draymanamer.com/contact/): معلومات التواصل والاستشارات العلمية والمهنية
+- [الرئيسية](https://yehia2amer.github.io/creatology/): الصفحة الرئيسية والمدخل العام للبوابة الأكاديمية
+- [عن الموقع](https://yehia2amer.github.io/creatology/about/): نبذة تعريفية ورؤية البوابة وأهدافها التخصصية
+- [السيرة الذاتية](https://yehia2amer.github.io/creatology/all_about_us/): السيرة الذاتية والمسيرة العلمية للأستاذ الدكتور أيمن عامر
+- [الكتب والمؤلفات](https://yehia2amer.github.io/creatology/books/): قائمة الكتب والمؤلفات الأكاديمية في علم النفس وسيكولوجية الإبداع
+- [المحاضرات](https://yehia2amer.github.io/creatology/lectures/): محاضرات وندوات علمية في التفكير الإبداعي وحل المشكلات
+- [الدورات التدريبية](https://yehia2amer.github.io/creatology/training_courses/): برامج التدريب وورش العمل المتخصصة
+- [البحوث العلمية](https://yehia2amer.github.io/creatology/category/%D8%A7%D9%84%D8%A8%D8%AD%D9%88%D8%AB-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A%D8%A9/): الأوراق البحثية والدراسات المحكمة المنشورة
+- [اتصل بنا](https://yehia2amer.github.io/creatology/contact/): معلومات التواصل والاستشارات العلمية والمهنية
 
 ## أبرز الكتب والمؤلفات
 - [ANALYTICAL THINKING](https://draymanamer.com/books/analytical-thinking/)
@@ -45,7 +45,7 @@
 - [مائدة مستديرة حول “الجهود الرائدة لمواجهة التعاطي والادمان في مصر”](https://draymanamer.com/training_courses/%d9%85%d8%a7%d8%a6%d8%af%d8%a9-%d9%85%d8%b3%d8%aa%d8%af%d9%8a%d8%b1%d8%a9-%d8%ad%d9%88%d9%84-%d8%a7%d9%84%d8%ac%d9%87%d9%88%d8%af-%d8%a7%d9%84%d8%b1%d8%a7%d8%a6%d8%af%d8%a9-%d9%84%d9%85%d9%88%d8%a7/)
 
 ## الموارد والبيانات التقنية
-- [خريطة الموقع (Sitemap)](https://draymanamer.com/sitemap.xml)
-- [فهرس البحث الكامل (Search Data)](https://draymanamer.com/search-data.json)
-- [كتالوج الموارد الذكية (AI Catalog)](https://draymanamer.com/ai-catalog.json)
-- [خلاصة التحديثات (Feed)](https://draymanamer.com/feed/atom.xml)
+- [خريطة الموقع (Sitemap)](https://yehia2amer.github.io/creatology/sitemap.xml)
+- [فهرس البحث الكامل (Search Data)](https://yehia2amer.github.io/creatology/search-data.json)
+- [كتالوج الموارد الذكية (AI Catalog)](https://yehia2amer.github.io/creatology/ai-catalog.json)
+- [خلاصة التحديثات (Feed)](https://yehia2amer.github.io/creatology/feed/atom.xml)

@@ -14,7 +14,14 @@ ROOT = SITE / '.local'
 (ROOT / 'reports').mkdir(parents=True, exist_ok=True)
 
 def generate_agentic_metadata(site, docs, items):
-    base_url = "https://draymanamer.com"
+    base_url = "https://yehia2amer.github.io/creatology"
+    toml_path = site / 'zola.toml'
+    if toml_path.exists():
+        for line in toml_path.read_text(encoding='utf-8').splitlines():
+            if line.strip().startswith('base_url'):
+                parts = line.split('=', 1)
+                if len(parts) == 2:
+                    base_url = parts[1].strip().strip('"\'').rstrip('/')
     llms_lines = [
         "# د. أيمن عامر — Creatology",
         "",
