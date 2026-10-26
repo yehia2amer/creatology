@@ -1,4 +1,4 @@
-base_url = "https://draymanamer.com"
+base_url = "https://yehia2amer.github.io/creatology"
 title = "Creatology"
 description = "موقع للاستشارات الحديثه"
 default_language = "ar"
@@ -17,4 +17,4 @@ anchors = "safe"
 smart_punctuation = false
 external_links_target_blank = false
 [extra]
-contact_endpoint = "https://draymanamer.com/wp-json/contact-form-7/v1/contact-forms/32/feedback"
+contact_endpoint = "https://yehia2amer.github.io/creatology/wp-json/contact-form-7/v1/contact-forms/32/feedback"

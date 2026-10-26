@@ -14,11 +14,11 @@ extra:
   - property: og:title
     content: الرئيسية
   - property: og:url
-    content: https://draymanamer.com/
+    content: https://yehia2amer.github.io/creatology/
   - property: og:site_name
     content: Creatology
   - property: og:image
-    content: https://draymanamer.com/wp-content/uploads/2019/03/مجلة-دراسات-نفسية.png
+    content: https://yehia2amer.github.io/creatology/wp-content/uploads/2019/03/مجلة-دراسات-نفسية.png
   - property: og:image:width
     content: '640'
   - property: og:image:height
@@ -27,7 +27,7 @@ extra:
     content: image/png
   - name: twitter:card
     content: summary_large_image
-  canonical_url: https://draymanamer.com/
+  canonical_url: https://yehia2amer.github.io/creatology/
   wordpress_title: الرئيسية
   initial_title: الرئيسية
   wordpress_local_date: '2018-09-26 22:03:41'

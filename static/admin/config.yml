@@ -5,7 +5,7 @@ backend:
 locale: ar
 media_folder: static/wp-content/uploads/editor
 public_folder: /wp-content/uploads/editor
-site_url: https://draymanamer.com
+site_url: https://yehia2amer.github.io/creatology
 display_url: http://localhost:1111
 collections:
 - name: articles
