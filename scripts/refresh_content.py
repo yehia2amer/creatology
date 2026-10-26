@@ -17,10 +17,27 @@ PAGE_SIZE = 20
 def route_key(value):
     return unquote(urlsplit(value).path).rstrip('/') + '/'
 
+def get_base_url():
+    try:
+        toml_path = Path(__file__).resolve().parents[1] / 'zola.toml'
+        if toml_path.exists():
+            for line in toml_path.read_text(encoding='utf-8').splitlines():
+                if line.strip().startswith('base_url'):
+                    parts = line.split('=', 1)
+                    if len(parts) == 2:
+                        return parts[1].strip().strip('"\'').rstrip('/')
+    except Exception:
+        pass
+    return 'https://yehia2amer.github.io/creatology'
+
 def public_url(front, route=None):
     route = route or front.get('path') or '/'
+    base = get_base_url()
     original = front.get('extra', {}).get('original_url', '')
-    return original if original and route_key(original) == route_key(route) else 'https://draymanamer.com' + route
+    if original:
+        path = urlsplit(original).path
+        return base + path
+    return base + route
 
 def timestamp(value):
     try:
